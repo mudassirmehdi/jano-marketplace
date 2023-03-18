@@ -1,3 +1,62 @@
-.breadcrumb {
-    color: red;
+.bread-main {
+    width: 100%;
+    padding: 120px 0;
+    background: url('../images/bread-bg.png');
+    background-size: cover;
+    background-position: center center;
+    .bread-content  {
+       margin-bottom: 50px;
+         h2 {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 90px; 
+            color: #FFFFFF;  
+            margin-bottom: 60px;          
+         }
+
+         p {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px; 
+            color: #FFFFFF;
+            margin-bottom: 60px;
+         }
+    }  
+ }
+
+ .detail-meta-bar {
+    background: #242424;
+    padding: 30px 0;
+    .metabar-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+            list-style: none;
+            display: flex;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            li {
+                margin-right: 40px;
+                .active {
+                    border-bottom: 4px solid #3251F4;
+                }
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px; 
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    // margin: 10px 0 10px 0;
+                }
+            }
+        }
+    }
 }
