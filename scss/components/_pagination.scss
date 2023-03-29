@@ -1,0 +1,41 @@
+.custom-pagination {
+    margin-top: 120px;
+    display: block;
+    .pagination {
+        .page-item {
+            // padding: 30px 40px;
+            margin-right: 1rem;
+            
+            .page-link {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 51px; 
+                text-transform: capitalize;
+
+                color: rgba(59, 59, 59, 0.65);
+                padding: 12px 30px;
+
+                background: #F4F4F4;
+                border-radius: 2px;  
+                border: none;
+
+                img {
+                    width: 11px;
+                }
+
+            }
+        }
+        .active {
+            background: #3251F4 !important;
+            box-shadow: 0px 4px 17px rgba(6, 36, 96, 0.21);
+            border-radius: 2px;
+            
+            .page-link {
+                background-color: transparent !important;
+                color: #fff !important;
+            }
+        }
+    }
+}

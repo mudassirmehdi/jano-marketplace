@@ -122,4 +122,535 @@
             }
         }
     }
+
+    .verified-info {
+        .card-header {
+            padding: 40px 30px;
+            background: #F7F7F7;
+            border: none;
+            h6 {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px; 
+                text-transform: capitalize;
+                color: #000000;
+                img {
+                    width: 20px;
+                    height:20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .card-body {
+            padding: 0px 30px 60px 30px;
+            .verified-info-detail {
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 40px; 
+                    text-transform: capitalize;
+                    color: #242424;
+                }
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 40px; 
+                    text-transform: capitalize; 
+                    text-decoration: none;
+                    color: #679AFC;
+                }
+
+                ul {
+                    li {
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 40px; 
+                        text-transform: capitalize;
+                        color: #000000;
+                    }
+                }
+
+                .intigration-list {
+                    list-style: none;
+                    padding-left: 0;
+                    li {
+                        font-weight: normal;
+                        img {
+                            margin-right: 12px;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .verification-card {
+        .card-header {
+            padding: 40px 30px 20px 30px;
+            background: #F7F7F7;
+            border: none;
+            h6 {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px; 
+                text-transform: capitalize;
+                color: #000000;
+                img {
+                    width: 20px;
+                    height:20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .card-body {
+            padding: 0px 30px 60px 30px;
+            .verification-crd-dtil {
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 40px; 
+                    text-transform: capitalize;
+                    color: #242424;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                    li {
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        // font-weight: 700;
+                        font-size: 18px;
+                        line-height: 40px; 
+                        text-transform: capitalize;
+                        color: #000000; 
+                        img {
+                            margin-right: 5px;
+                            width: 27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .advice-card {
+        .card-header {
+            padding: 40px 30px;
+            background: #F7F7F7;
+            border: none;
+            h6 {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px; 
+                text-transform: capitalize;
+                color: #000000;
+                img {
+                    width: 20px;
+                    height:20px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .card-body {
+            padding: 0px 30px 60px 30px;
+            .advice-crd-dtil {
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 40px; 
+                    text-transform: capitalize;
+                    color: #242424;
+                }
+                a {
+                    font-family: 'Poppins', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 40px; 
+                    text-transform: capitalize; 
+                    text-decoration: none;
+                    color: #679AFC;
+                } 
+
+                .advice-accordins {
+                    .accordion {
+                        .accordion-item {
+                            border: none;
+                            background-color: #F7F7F7;
+                            .accordion-header {
+                                line-height: normal;
+                                border-bottom: none;
+                                border-top: 1px solid #777777;
+                                .accordion-button:not(.collapsed) {
+                                    border-bottom: none;
+                                    box-shadow: none !important;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    // line-height: 40px; 
+                                    text-transform: capitalize; 
+
+                                    color: #000000; 
+
+                                    &:focus {
+                                        border-color: transparent;
+                                        box-shadow: none  !important;
+                                    }
+
+                                    &::after {
+                                        background-image: url('../images/icons/icon-accordians.svg');
+                                        transform: rotate(-180deg);
+                                    } 
+                                }
+
+                                .accordion-button {
+                                    padding: 16px;
+                                    // border-top: 1px solid #777777;
+                                    border-bottom: none;
+                                    background-color: #F7F7F7; 
+
+                                    font-family: 'Poppins', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    // line-height: 40px; 
+                                    text-transform: capitalize; 
+
+                                    color: #000000;
+
+                                    &:focus {
+                                        border-color: transparent;
+                                        box-shadow: none !important;
+                                    }
+
+                                    &::after {
+                                        width: 1rem;
+                                        height: 1rem;
+                                        margin-left: auto;
+                                        content: "";
+                                        background-image: url('../images/icons/icon-accordians.svg');
+                                        background-repeat: no-repeat;
+                                        background-size: 1rem;
+                                        transition: transform .2s ease-in-out;
+                                    }
+                                } 
+                            }
+                            // .accordion-body {
+
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .preferences-card {
+        background: #444444;
+        .card-body {
+            padding: 60px 40px;
+            h3 {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 48px; 
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+// Search Page  
+
+.search-sidebar {
+    .filter-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        p {
+            margin-bottom: 0px;
+            a {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px; 
+                text-transform: capitalize;
+                text-decoration: none;
+                color: #000000;
+                img {
+                    height: 25px;
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+
+    .search-sidebar-accordians {
+        .accordion {
+            .accordion-item {
+                border: none;
+                background-color: #ffffff;
+                .accordion-header {
+                    line-height: normal;
+                    border-bottom: none;
+                    border-top: 3px solid #D9D9D9;
+                    .accordion-button:not(.collapsed) {
+                        border-bottom: none;
+                        box-shadow: none !important;
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        // line-height: 40px; 
+                        text-transform: capitalize; 
+
+                        color: #000000; 
+
+                        &:focus {
+                            border-color: transparent;
+                            box-shadow: none  !important;
+                        }
+
+                        &::after {
+                            background-image: url('../images/icons/icon-accordians.svg');
+                            transform: rotate(-180deg);
+                        } 
+                    }
+
+                    .accordion-button {
+                        padding: 16px;
+                        // border-top: 1px solid #777777;
+                        border-bottom: none;
+                        background-color: #ffffff; 
+
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        // line-height: 40px; 
+                        text-transform: capitalize; 
+
+                        color: #000000;
+
+                        &:focus {
+                            border-color: transparent;
+                            box-shadow: none !important;
+                        }
+
+                        &::after {
+                            width: 1rem;
+                            height: 1rem;
+                            margin-left: auto;
+                            content: "";
+                            background-image: url('../images/icons/icon-accordians.svg');
+                            background-repeat: no-repeat;
+                            background-size: 1rem;
+                            transition: transform .2s ease-in-out;
+                        }
+                    } 
+                }
+                .accordion-body {
+                    .keyword-input {
+                        input {
+                            background: #F6F6F6;
+                            border-radius: 8px;
+                            height: 60px;
+                            border: none;
+                            &:focus {
+                                border: none;
+                                box-shadow: none;
+                                outline: none;
+                            }
+
+                            &::placeholder {
+                                font-family: 'Poppins', sans-serif;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 14px; 
+                                text-transform: capitalize;
+                                color: #9B9999;
+                            }
+                        }
+                    }
+
+                    .accordion-checkboxes {
+                        .form-check {
+                            .form-check-input {
+                                width: 24px;
+                                height: 24px; 
+                            }
+                            .form-check-label {
+                                font-family: 'Poppins', sans-serif;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px; 
+                                text-transform: capitalize;
+                                color: #000000;
+                                margin-left: 10px;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+
+                    .range-slider {
+                        width: 300px;
+                        margin: auto;
+                        text-align: center;
+                        position: relative;
+                        height: 6em;
+                    }
+                    
+                    .range-slider svg,
+                    .range-slider input[type=range] {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+                    
+                    input[type=number] {
+                        border: none;
+                        // text-align: center;
+                        font-size: 13px;
+                        -moz-appearance: textfield;
+                        width: 100%;
+                    }
+                    
+                    input[type=number]::-webkit-outer-spin-button,
+                    input[type=number]::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                    
+                    input[type=number]:invalid,
+                    input[type=number]:out-of-range {
+                        border: 2px solid #ff6347;
+                    }
+                    
+                    input[type=range] {
+                        -webkit-appearance: none;
+                        width: 100%;
+                    }
+                    
+                    input[type=range]:focus {
+                        outline: none;
+                    }
+                    
+                    input[type=range]:focus::-webkit-slider-runnable-track {
+                        background: #2497e3;
+                    }
+                    
+                    input[type=range]:focus::-ms-fill-lower {
+                        background: #2497e3;
+                    }
+                    
+                    input[type=range]:focus::-ms-fill-upper {
+                        background: #2497e3;
+                    }
+                    
+                    input[type=range]::-webkit-slider-runnable-track {
+                        width: 100%;
+                        height: 5px;
+                        cursor: pointer;
+                        animate: 0.2s;
+                        background: #2497e3;
+                        border-radius: 1px;
+                        box-shadow: none;
+                        border: 0;
+                    }
+                    
+                    input[type=range]::-webkit-slider-thumb {
+                        z-index: 2;
+                        position: relative;
+                        box-shadow: 0px 0px 0px #000;
+                        border: 1px solid #2497e3;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 25px;
+                        background: #a1d0ff;
+                        cursor: pointer;
+                        -webkit-appearance: none;
+                        margin-top: -7px;
+                    }
+                    
+                    input[type=range]::-moz-range-track {
+                        width: 100%;
+                        height: 5px;
+                        cursor: pointer;
+                        animate: 0.2s;
+                        background: #2497e3;
+                        border-radius: 1px;
+                        box-shadow: none;
+                        border: 0;
+                    }
+                    
+                    input[type=range]::-moz-range-thumb {
+                        z-index: 2;
+                        position: relative;
+                        box-shadow: 0px 0px 0px #000;
+                        border: 1px solid #2497e3;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 25px;
+                        background: #a1d0ff;
+                        cursor: pointer;
+                    }
+                    
+                    input[type=range]::-ms-track {
+                        width: 100%;
+                        height: 5px;
+                        cursor: pointer;
+                        animate: 0.2s;
+                        background: transparent;
+                        border-color: transparent;
+                        color: transparent;
+                    }
+                    
+                    input[type=range]::-ms-fill-lower,
+                    input[type=range]::-ms-fill-upper {
+                        background: #2497e3;
+                        border-radius: 1px;
+                        box-shadow: none;
+                        border: 0;
+                    }
+                    
+                    input[type=range]::-ms-thumb {
+                        z-index: 2;
+                        position: relative;
+                        box-shadow: 0px 0px 0px #000;
+                        border: 1px solid #2497e3;
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 25px;
+                        background: #a1d0ff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
