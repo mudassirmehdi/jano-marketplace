@@ -1,5 +1,7 @@
 (function() {
 
+  
+
     var parent = document.querySelector(".range-slider");
     if(!parent) return;
   
@@ -40,5 +42,9 @@
   
       }
     });
+
+    
   
   })();
+
+  
