@@ -250,10 +250,14 @@
           <!-- sidebar -->
           <div class="col-lg-3">
             <div class="order-confirm-sidebar"> 
-              
-                <div class="countdown-timer">
-                  <div class="container">
-                    <h1 id="headline">time left to deliver</h1>
+
+              <div class="card card-countdown mb-5">
+                <div class="card-header pb-0">
+                  <h6>About This Seller</h6> 
+                </div>
+
+                <div class="card-body p-0">
+                  <div class="countdown-timer">
                     <div id="countdown">
                       <ul>
                         <li><span id="days"></span>days</li>
@@ -261,37 +265,43 @@
                         <li><span id="minutes"></span>Minutes</li>
                         <li><span id="seconds"></span>Seconds</li>
                       </ul>
+
+                      <a href="#" class="btn btn-primary count-btn">deliver now</a>
                     </div>
-                    <a href="#" class="btn btn-primary count-btn">deliver now</a>
                   </div>
                 </div>
+              </div> 
 
 
-                <div class="card author-info mb-4">
-                  <div class="card-header">
-                      <h6>About This Seller</h6> 
-                   </div>
+              <div class="card author-info mb-5">
+                <div class="card-header">
+                    <h6>About This Seller</h6> 
+                 </div>
 
-                   <div class="card-body">
-                       <div class="author-profile text-center">
-                          <img src="images/seller-profile.png" class="rounded-circle img-fluid">
+                 <div class="card-body">
+                     <div class="author-profile text-center">
+                        <img src="images/seller-profile.png" class="rounded-circle img-fluid">
 
-                          <img src="images/icons/icon-verified.svg" class="verify-icon">
-                       </div>
+                        <img src="images/icons/icon-verified.svg" class="verify-icon">
+                     </div>
 
-                       <div class="author-detail text-center">
-                          <h4>sheraz naseem</h4>
-                          <p>ui ux designer</p>
+                     <div class="author-detail text-center">
+                        <h4>sheraz naseem <span class="rating"><img src="images/icons/icon-star.svg">  5.0</span></h4>
+                        <p>ui ux designer</p>
 
-                          <span class="location">
-                              <img src="images/icons/icon-map-marker.svg" alt=""> Pakistan
-                          </span>
-                       </div>
-                   </div>
-               </div>
-               <div class="sidebar-footer">
-                  <p>To Cancel the Order Or Report Please Contact<a href="#">Click Here</a></p>
-               </div> 
+                        <span class="location">
+                            <img src="images/icons/icon-map-marker.svg" alt=""> Pakistan
+                        </span>
+                     </div>
+                 </div>
+              </div>
+
+              <div class="card card-dismiss-order mb-5">
+                <div class="card-body text-center">
+                  <p>To Cancel the Order Or Report Please Contact <a href="#">Click Here</a></p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

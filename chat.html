@@ -166,7 +166,7 @@
                                           <div class="chat-header">
                                             <div class="msg-search">
                                               <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search" aria-label="search">
-                                              <a class="add" href="#"><img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/search.svg" alt="add" width="32px" height="32px"></a>
+                                              <a class="add" href="#"><img class="img-fluid" src="images/icons/icon-search-2.svg"></a>
                                             </div> 
                                           </div>
                           
@@ -174,24 +174,47 @@
                                             <!-- chat-list -->
                                             <div class="chat-lists"> 
                                                   <div class="chat-list">
-                                                    <a href="#" class="d-flex align-items-center">
+                                                    <a href="#" class="d-flex align-items-center chat-user">
                                                       <div class="flex-shrink-0">
-                                                        <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
-                                                        <span class="active"></span>
+                                                        <img class="img-fluid" src="images/profile-1.png" alt="user img"> 
+                                                        <span class="no-active"></span>
                                                       </div>
                                                       <div class="flex-grow-1 ms-3">
-                                                        <h3>Andrew Glover</h3>
-                                                        <p>It seems logical that the...</p>
+                                                        <div class="chat-list-data">
+                                                          <div class="chat-message ">
+                                                            <h3>Andrew Glover</h3>
+                                                            <p>It seems logical that the...</p>
+                                                          </div>
+  
+                                                          <div class="chat-meta ">
+                                                            <h5>5 min</h5>
+                                                            <span class="number-message">
+                                                              11
+                                                            </span>
+                                                          </div>
+                                                        </div>
                                                       </div>
                                                     </a>
                                                    
-                                                    <a href="#" class="d-flex align-items-center">
+                                                    <a href="#" class="d-flex align-items-center chat-user">
                                                       <div class="flex-shrink-0">
-                                                        <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                        <img class="img-fluid" src="images/profile-2.png" alt="user img">
+                                                        <span class="away"></span>
                                                       </div>
                                                       <div class="flex-grow-1 ms-3">
-                                                        <h3>Mickey Bernier</h3>
-                                                        <p>Lorem Ipsum is simply du...</p>
+                                                        <div class="chat-list-data">
+                                                          <div class="chat-message ">
+                                                            <h3>Andrew Glover</h3>
+                                                            <p>It seems logical that the...</p>
+                                                          </div>
+  
+                                                          <div class="chat-meta ">
+                                                            <h5>5 min</h5>
+                                                            <span class="number-message">
+                                                              11
+                                                            </span>
+                                                          </div>
+                                                        </div>
                                                       </div>
                                                     </a>
                                                   </div> 
@@ -209,23 +232,48 @@
                                       <div class="modal-dialog-scrollable">
                                         <div class="modal-content">
                                           <div class="msg-head">
-                                            <div class="row">
+                                            <div class="row align-items-center">
                                               <div class="col-8">
                                                 <div class="d-flex align-items-center">
-                                                  <span class="chat-icon"><img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/arroleftt.svg" alt="image title"></span>
-                                                  <div class="flex-shrink-0">
-                                                    <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
-                                                  </div>
-                                                  <div class="flex-grow-1 ms-3">
-                                                    <h3>Doris Brown</h3>
-                                                    <p>Online</p>
-                                                  </div>
+                                                    <span class="chat-icon">
+                                                      <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/arroleftt.svg" alt="image title">
+                                                    </span>
+                                                  
+                                                    <div class="d-flex align-items-center">
+                                                      <div class="flex-shrink-0">
+                                                        <div class="msg-head-img">
+                                                          <img class="img-fluid " src="images/profile-3.png" alt="user img" >
+                                                          <span class="active"></span>
+                                                        </div>
+                                                      </div>
+                                                      <div class="flex-grow-1 ms-3">
+                                                        <div class=" msg-head-img-content">
+                                                          <h3>Doris Brown</h3>
+                                                          <p>Online</p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
                                                 </div>
                                               </div>
                                               <div class="col-4">
                                                 <ul class="moreoption">
+
+                                                  <li class="navbar nav-item">
+                                                    <a class="nav-link" href="#" >
+                                                      <img src="images/icons/icon-audio-call.svg" alt="">
+                                                    </a> 
+                                                  </li>
+
+                                                  <li class="navbar nav-item">
+                                                    <a class="nav-link" href="#" >
+                                                      <img src="images/icons/icon-video-call.svg" alt="">
+                                                    </a> 
+                                                  </li>
+
                                                   <li class="navbar nav-item dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                      <img src="images/icons/icon-three-dot.svg" alt="">
+                                                    </a>
                                                     <ul class="dropdown-menu">
                                                       <li><a class="dropdown-item" href="#">Action</a></li>
                                                       <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -242,47 +290,51 @@
                           
                                           <div class="modal-body">
                                             <div class="msg-body">
-                                              <ul>                                                <li class="sender m-4">
-                                                  <p> Hey, Are you there? <span class="time">10:06 am</span></p>
-                                                </li>
-                                                <li class="repaly">
-                                                  <p>yes!</p>
-                                                  <span class="time">10:20 am</span>
-                                                </li>
-                                                <li class="sender">
-                                                  <p> Hey, Are you there? </p>
-                                                  <span class="time">10:26 am</span>
-                                                </li>
-                                                <li class="sender">
-                                                  <p> Hey, Are you there? </p>
-                                                  <span class="time">10:32 am</span>
-                                                </li>
-                                                <li class="repaly">
-                                                  <p>How are you?</p>
-                                                  <span class="time">10:35 am</span>
-                                                </li>
-                                                <li>
-                                                  <div class="divider">
-                                                    <h6>Today</h6>
+                                                
+                                              <div class="ongoing-msg">
+                                                 <div class="ongoing-start">
+                                                  <div class="ongoing-msg-img">
+                                                    <img src="images/profile.png" alt="">
                                                   </div>
-                                                </li>
-                          
-                                                <li class="repaly">
-                                                  <p> yes, tell me</p>
-                                                  <span class="time">10:36 am</span>
-                                                </li>
-                                                <li class="repaly">
-                                                  <p>yes... on it</p>
-                                                  <span class="time">junt now</span>
-                                                </li>
-                          
-                                              </ul>
+                                                  <div class="ongoing-msg-data">
+                                                     <p>Good morning....</p>
+                                                     <span class="time">10:00 AM</span>
+                                                  </div>
+                                                 </div>
+                                              </div>
+
+                                              <div class="upcoming-msg"> 
+                                                <div class="upcoming-start">
+                                                  <div class="upcoming-msg-data">
+                                                    <p>Good morning, How are you? What about our next meeting?</p>
+                                                    <span class="time"> 10:02 AM </span>
+                                                  </div> 
+                                                  <div class="upcoming-msg-img">
+                                                    <img src="images/profile-3.png" alt="">
+                                                  </div>
+                                                </div> 
+                                              </div>
+
+                                              <div class="ongoing-msg">
+                                                <div class="ongoing-start">
+                                                 <div class="ongoing-msg-img">
+                                                   <img src="images/profile.png" alt="">
+                                                 </div>
+                                                 <div class="ongoing-msg-data">
+                                                    <p>I am good thanks</p>
+                                                    <span class="time">10:03 AM</span>
+                                                 </div>
+                                                </div>
+                                             </div>
+
                                             </div>
                                           </div>
                           
                                           <div class="send-box">
                                             <form action="">
-                                              <input type="text" class="form-control" aria-label="message…" placeholder="Write message…"> 
+
+                                              <img src="images/profile.png" alt="" class="img-fluid">
+                                              <input type="text" class="form-control" aria-label="message…" placeholder="reply..."> 
                                             </form> 
                           
                                           </div>
