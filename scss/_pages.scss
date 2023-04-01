@@ -492,6 +492,7 @@
 }
 
 .faqs-section {
+    // overflow-y: hidden !important;
     .heading-section {
         margin-bottom: 40px;
         h3 {
@@ -509,7 +510,7 @@
             background: #FFFFFF;
             box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25);
             border-radius: 19px;
-            width: 55%;
+            // width: 50%;
             position: absolute;
             left: 0;
             right: 0;
@@ -571,9 +572,9 @@
             background: #FFFFFF;
             box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25);
             border-radius: 19px;
-            width: 60%; 
+            // width: 50%; 
             position: relative !important;
-            right: -50%;
+            right: -45%;
             z-index: -990px;
             
             .tab-pane {
@@ -602,3 +603,4 @@
         }
     }
 }
+
