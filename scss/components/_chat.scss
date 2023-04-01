@@ -715,12 +715,13 @@
             height: 100vh;
             overflow: hidden;
             padding: 30px 0;
-            background: #f5f5f5;
+            // background: #f5f5f5;
         }
         .chat-area {
             position: relative;
             width: 100%;
-            background-color: #fff;
+            // background-color: #fff;
+            background: #F9F9F9;
             border-radius: 0.3rem;
             height: 90vh;
             overflow: hidden;
@@ -730,6 +731,12 @@
                 border-radius: 0;
                 outline: 0;
                 height: 100%;
+                .modal-body {
+                    background-color: #F9F9F9;
+                }
+                .chat-header {
+                    background-color: #F9F9F9; 
+                }
             }
             .modal-dialog-scrollable {
                 height: 100% !important;
@@ -806,6 +813,10 @@
             width: 300px;
             float: left;
             padding: 15px;
+            border: 1px solid #D0D0D0;
+            border-radius: 8px;
+
+            margin-right: 10px;
             .modal-dialog {
                 max-width: 100%;
                 margin: 0;
@@ -815,7 +826,9 @@
             width: auto;
             overflow: hidden;
             height: 100%;
-            border-left: 1px solid #ccc;
+            // border-left: 1px solid #ccc;
+            border: 1px solid #D0D0D0;
+            border-radius: 8px;
             .modal-dialog {
                 max-width: 100%;
                 margin: 0;
@@ -885,6 +898,7 @@
             }
             padding: 15px;
             border-bottom: 1px solid #ccc;
+            background: #F9F9F9;
         }
         .moreoption {
             display: flex;
@@ -1050,6 +1064,7 @@
         }
         .send-box {
             padding: 15px;
+            background: #F9F9F9;
             border-top: 1px solid #ccc;
             form {
                 display: flex;
@@ -1225,12 +1240,11 @@
                 }
             }
             .send-box {
+                background: #F9F9F9;
                 button {
                     width: 28%;
-                }
-                .form-control {
-                    width: 70%;
-                }
+                    background: #F9F9F9;
+                }  
             }
             .chat-list {
                 h3 {
