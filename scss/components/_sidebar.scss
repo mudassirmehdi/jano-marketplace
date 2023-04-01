@@ -745,3 +745,143 @@
     }
 
 }
+
+// Order Confirm Sidebar 
+
+.order-confirm-sidebar {
+    height: 100vh;
+    .countdown-timer {
+        margin-bottom: 20px;
+        padding: 20px 10px;
+        background: #FBFDFB;
+        border-radius: 10px;
+        border: none;
+        $color_1: #333;
+        $font-family_1: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        $background-color_1: #ffd54f;
+        &:root {
+            --smaller: .75;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            height: 100%;
+            margin: 0;
+            align-items: center;
+            background-color: $background-color_1;
+            display: flex;
+            font-family: $font-family_1;
+        }
+        h1 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            color: #000000;
+        }
+
+        ul {
+            margin-bottom: 20px; 
+            
+        }   
+        li {
+            font-family: 'Poppins';
+            font-style: normal;
+            color: #000000;
+            display: inline-block;
+            border-right: 2px solid #D9D9D9;
+            font-size: 14px;
+            font-weight: 400;
+            list-style-type: none;
+            padding: 0 12px;
+            max-width: 200px;
+            text-transform: uppercase;
+            span {
+                display: block;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+
+            
+        } 
+
+        li:last-child {
+            border: none;
+        }
+        
+
+        .count-btn {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            display: inline-block;
+            padding: 10px 120px !important;
+            background: #3251F4;
+            border-radius: 32px;
+            font-size: 14px;
+            margin-block: 12px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+        @media all and (max-width: 768px) {
+            h1 {
+                font-size: calc(1.5rem * var(--smaller));
+            }
+            li {
+                font-size: calc(1.125rem * var(--smaller));
+                span {
+                    font-size: calc(3.375rem * var(--smaller));
+                }
+            }
+        }
+
+    }
+    .author-info {
+        background: #FBFDFB;
+        border-radius: 10px;
+        border: none;
+
+        .card-header {
+            background: #FBFDFB;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .author-profile  {
+            
+        }
+    }
+    .sidebar-footer {
+        background: #FBFDFB;
+        border-radius: 10px;
+        padding: 35px 50px;
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #F51B1B;
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+        }
+    }
+}
