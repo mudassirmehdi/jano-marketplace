@@ -2023,6 +2023,10 @@ header .verified-listing-card .verified-listing-content p {
     max-width: 1500px;
   }
 }
+body {
+  overflow: hidden !important;
+}
+
 .business-listing {
   width: 100%;
   padding: 50px 0 100px 0;
