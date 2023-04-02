@@ -3115,4 +3115,55 @@ body {
   background: #3251F4;
 }
 
+.join-today-section {
+  width: 100%;
+  background-image: url("../images/bottom-bg-2.png");
+  background-size: cover;
+  background-position: center center;
+}
+.join-today-section .section-heading strong {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  display: block;
+}
+.join-today-section .section-heading h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.join-today-section .section-heading p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #DEDEDE;
+}
+.join-today-section .join-card {
+  background: #3251F4;
+  border-radius: 9px;
+  padding: 60px 50px;
+}
+.join-today-section .join-card img {
+  height: 110px;
+  margin-bottom: 35px;
+}
+.join-today-section .join-card h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
 /*# sourceMappingURL=main.css.map */

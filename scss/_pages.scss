@@ -1309,3 +1309,68 @@ body {
     }
 
 }
+
+.join-today-section {
+    width: 100%;
+    background-image: url('../images/bottom-bg-2.png');
+    background-size: cover;
+    background-position: center center;
+    // padding: 120px 0 !important;
+
+    .section-heading {
+        strong {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;  
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+            display: block;
+
+        }
+
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px; 
+            text-transform: capitalize;
+            color: #FFFFFF;
+
+
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px; 
+            text-transform: capitalize;
+            color: #DEDEDE;  
+        }
+    }
+
+    .join-card {
+        background: #3251F4;
+        border-radius: 9px;
+        padding: 60px 50px;
+
+        img {
+            height: 110px;
+            margin-bottom: 35px;
+        }
+
+        h6 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px; 
+            text-transform: capitalize;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+
+        }
+    }
+
+}
