@@ -2024,7 +2024,7 @@ header .verified-listing-card .verified-listing-content p {
   }
 }
 body {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .business-listing {
