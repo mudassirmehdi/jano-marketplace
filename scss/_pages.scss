@@ -14,10 +14,10 @@
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 50px;
-        line-height: 102px;  
+        font-size: 46px;
+        // line-height: 102px;  
         color: #242424;
-        margin-bottom: 8px;
+        margin-bottom: 30px;
     }
     p {
         font-family: 'Poppins', sans-serif;
@@ -28,6 +28,24 @@
         color: #777777;
         margin-bottom: 46px;
     }
+
+    .heading-action {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px; 
+        text-transform: capitalize;
+        color: #3251F4; 
+        text-decoration: none;
+
+        img {
+            margin-left: 1rem;
+            height: 15px;
+        }
+        
+    }
+
+
     .filters-pills { 
         list-style: none;
         padding-left: 0px; 
@@ -214,7 +232,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
-        line-height: 28px; 
+        // line-height: 28px; 
         text-transform: capitalize;
         color: #000000;
         img {
@@ -836,4 +854,454 @@
         }
         
     }   
+}
+
+.pricing-section {
+    .pricing-tables {
+        .pricing-tables-items {
+
+            .bg-F1F2F5 {
+                background: #F1F2F5;
+            }
+
+            background: #F8F8F8;
+            border-radius: 8px;
+            .pricing-table-head {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 30px;
+                h4 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px; 
+                    text-transform: capitalize;
+                    color: #000000;
+                    margin-bottom: 0px;
+                }
+
+                img {
+                    height: 18px;
+                }
+
+            }
+
+            .pricing-table-body {
+                ul {
+                    list-style: none;
+                    padding-left: 0px;
+                    .body-item {
+                        padding: 30px;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        h5 {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px; 
+                            letter-spacing: 0.025em;
+                            text-transform: capitalize;
+
+                            color: #000000;
+
+                        }
+                        
+                        .price {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px; 
+                            letter-spacing: 0.025em;
+                            text-transform: capitalize;
+
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.sucsess-story {
+    .sucsess-story-card {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+
+        .card-body {
+            padding: 30px;
+            .card-text {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px; 
+                text-transform: capitalize;
+                color: #929292;
+                line-height:40px;
+                margin-bottom: 40px;
+            }
+            
+            a {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px; 
+                text-transform: capitalize;
+                color: #3251F4;
+                text-decoration: none;
+
+                img {
+                    height: 12px;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+.blog-section {
+    .blog-card {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+
+        .card-body {
+            padding: 30px;
+            .card-text {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px; 
+                text-transform: capitalize;
+                color: #929292;
+                line-height:30px;
+                margin-bottom: 40px;
+            }
+
+            .card-title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 38px;
+                display: flex;
+                align-items: center;
+
+                color: #000000;
+                margin-bottom: 20px;
+            }
+
+            .blog-meta {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 18px;
+                position: relative;
+                right: -30px;
+                .meta-bar {
+                    padding: 0px 20px 0px 0px;
+                    width: 95%;
+                    display: flex;
+                    align-items: center;
+                    background: #EEE9E9;
+                    border-radius: 40px 0px 0px 40px;
+                    justify-content: space-between;
+                    .author-info {
+                        margin-right: 15px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 26px; 
+                        text-transform: capitalize;
+                        color: #000000;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        
+                        img {
+                            margin-right: 12px;
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+
+                    .publish-date {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 200;
+                        font-size: 14px; 
+                        letter-spacing: 0.045em;
+                        text-transform: capitalize;
+                        color: #000000;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        img {
+                            margin-right: 8px;
+                            
+                        }
+                    }
+                }
+            }
+            
+            a {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px; 
+                text-transform: capitalize;
+                color: #FE696A;;
+                text-decoration: none;
+
+                img {
+                    height: 12px;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+.call-to-action {
+    width: 100%;
+    background-image: url('../images/particle-bottom-bg.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0 !important;
+    .section-heading {
+        h3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px; 
+            text-transform: capitalize;
+            color: #FFFFFF;
+
+
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 278.5%;
+            text-transform: capitalize;
+
+            color: #FFFFFF;
+
+
+        }
+    }
+
+    .call-to-action-btn {
+       
+        border: 1px solid #FFFFFF;
+        border-radius: 35px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px; 
+        text-decoration: none;
+        text-transform: capitalize;
+
+        color: #000000;
+        padding: 12px 30px;
+    }
+
+    .bg-transparent {
+        background-color: transparent;
+        color: #FFFFFF;
+    }
+
+    .bg-white {
+        background: #FFFFFF;
+    }
+}
+
+.valuation-slider {
+    width: 100%;
+    background-image: url('../images/slider-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .carousel {
+        .carousel-inner {
+            overflow: inherit !important;
+            .carousel-item {
+                .slider-content {
+                    h3 {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 70px; 
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+                        margin-bottom: 60px;
+                    }
+
+                    p  {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 32px; 
+                        text-transform: capitalize;
+                        line-height: 50px;
+                        margin-bottom: 60px;
+                        color: #CDCCCC;
+
+                    }
+
+                    a {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px; 
+                        text-transform: capitalize;
+                        background: #FFFFFF;
+                        border-radius: 36px;
+                        text-decoration: none;
+                        padding: 16px 36px;
+                        color: #131313;
+                    }
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: -75px;
+            button {
+                width: 17px !important;
+                height: 14px !important;
+                opacity: 1;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background: #D9D9D9;
+                margin-right: 8px;
+                margin-left: 8px;
+            }
+
+            .active {
+                background: #3251F4;
+            }
+        }
+    }
+}
+
+.testimonials-slider {
+    .testimonials-heading {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px; 
+        margin-bottom: 90px;
+        color: #2F4858;
+    }
+
+    .carousel {
+        .carousel-inner {
+            overflow: inherit !important;
+            .carousel-item {
+                .slider-content {
+                    .testimonials-img {
+                        
+                        position: relative;
+                        .qoutes-icon {
+                            width: 80px;
+                            background: #3251F4;
+                            border-radius: 9px;
+                            height: 140px;
+                            display: flex;
+                            justify-content: center;
+                            position: absolute;
+                            top: 70px;
+                            right: 90px;
+                            align-items: center;
+                        }
+                    }
+
+                    .testimonials-content {
+                        h2 { 
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 50px; 
+                            color: #000000;
+                            margin-bottom: 38px;
+                            span {
+                                color: #3251F4;
+                            }
+                        }
+
+                        p {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 43px; 
+                            color: rgba(0, 0, 0, 0.65);
+                            margin-bottom: 45px;
+                        }
+
+                        .testimonials-author {
+                            h5 {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 25px;
+                                color: #000000;
+                                line-height: 50px; 
+                                span {
+                                    margin-left: 20px;
+                                    color: #3251F4;
+                                } 
+
+                                img {
+                                    height: 3px;
+                                    margin-right: 13px;
+                                }
+                            }
+                        }
+
+                    }
+              
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 0px;
+            top: 0px;
+            right: 0 !important;
+            transform: translate(50%, 15%);
+            left: 0px;
+            button {
+                width: 17px !important;
+                height: 14px !important;
+                opacity: 1;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background: #D9D9D9;
+                margin-right: 8px;
+                margin-left: 8px;
+            }
+
+            .active {
+                background: #3251F4;
+            }
+        }
+    }
+
 }
