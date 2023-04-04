@@ -1417,3 +1417,192 @@ body {
       }
 }
 
+
+.order-main {
+    background: #F9F9F9;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px; 
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+
+    // padding: 20px;
+    .Order-Tab-One {
+        .nav-tabs {
+            // border: none;
+            border-bottom: 1px solid #D0D0D0;
+            .nav-item { 
+                .nav-link { 
+                    padding: 15px 40px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px; 
+                    text-transform: capitalize;
+                    color: #515151;
+                    margin-bottom: 0px;
+
+                }
+                .active {
+                    color: #3251F4;
+                }
+            }
+        }
+
+        .tab-content {
+            padding: 32px;
+            .tab-pane {
+                h4 { 
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px; 
+                    text-transform: capitalize;
+                    color: #000;
+                    margin-bottom: 32px;
+                }
+
+                .Order-Tab-Two {
+                    .nav-tabs {
+                        // border: none;
+                        border: 1px solid #D0D0D0;
+                        border-radius: 10px;
+                        .nav-item { 
+                           
+                            .nav-link { 
+                                padding: 20px 25px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px; 
+                                text-transform: capitalize;
+                                color: #515151; 
+                                text-align: left;
+                                border-bottom: 1px solid #D0D0D0;
+                                
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center; 
+            
+                            }
+                            .active {
+                                color: #fff;
+                                background: #fcb800;
+                                // border-top-right-radius: 10px;
+                                // border-top-left-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .Order-Tab-Two-Content {
+                    .tab-content {
+                        .order-content-card {
+                            border: 1px solid #D0D0D0;
+                            padding: 20px;
+                            background-color: #fff;
+                            border-radius: 10px;
+                            margin-bottom: 20px;
+                            // box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.12);
+
+                            h3 {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 22px; 
+                                text-transform: capitalize;
+                                color: #000; 
+                                text-align: left;
+                                margin-bottom: 14px;
+                                .status {
+                                    color: #fff;
+                                    border-radius: 30px;
+                                    padding: 3px 7px;
+                                    font-size: 9px; 
+                                    margin: 0 10px;
+                                    background-color: rgb(66, 214, 151);
+                                }
+                                .small-text {
+                                    font-size: 16px; 
+                                }
+
+                                .text-blue {
+                                    color:#3251F4 ;
+                                }
+                            }
+
+                            strong {
+                                margin-bottom: 10px;
+                                display: block;
+                                font-size: 14px;
+                            }
+
+                            h5 {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 16px; 
+                                text-transform: capitalize;
+                                color: #6e6e6e; 
+                                text-align: left;
+                                margin-bottom: 50px;
+                                span {
+                                    font-weight: 500;
+                                    
+                                    color: #000; 
+                                    // font-size: 16px; 
+                                }
+
+                                strong {
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    color: #000; 
+                                }
+                            }
+
+                            .order-card-footer {
+                                p {
+                                    font-family: 'Poppins';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px; 
+                                    text-transform: capitalize;
+                                    color: #000;  
+
+                                    a {
+                                        font-weight: 600;
+                                        color: #000;
+                                        text-decoration: none;
+                                    }
+
+                                    span {
+                                        color: #6e6e6e; 
+                                    }
+                                }
+                                .btn  {
+                                    border: 1px solid #3251F4;
+                                    text-decoration: none;
+                                    font-family: 'Poppins';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 15px; 
+                                    text-transform: capitalize;
+                                    color: #000; 
+                                    text-align: left;
+                                    padding: 10px 20px;
+                                    border-radius: 10px;
+                                    img {
+                                        height: 20px;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

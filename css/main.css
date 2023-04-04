@@ -3200,4 +3200,151 @@ body {
   right: -30px;
 }
 
+.order-main {
+  background: #F9F9F9;
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.order-main .Order-Tab-One .nav-tabs {
+  border-bottom: 1px solid #D0D0D0;
+}
+.order-main .Order-Tab-One .nav-tabs .nav-item .nav-link {
+  padding: 15px 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #515151;
+  margin-bottom: 0px;
+}
+.order-main .Order-Tab-One .nav-tabs .nav-item .active {
+  color: #3251F4;
+}
+.order-main .Order-Tab-One .tab-content {
+  padding: 32px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 32px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two .nav-tabs {
+  border: 1px solid #D0D0D0;
+  border-radius: 10px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two .nav-tabs .nav-item .nav-link {
+  padding: 20px 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #515151;
+  text-align: left;
+  border-bottom: 1px solid #D0D0D0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two .nav-tabs .nav-item .active {
+  color: #fff;
+  background: #fcb800;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card {
+  border: 1px solid #D0D0D0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #000;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h3 .status {
+  color: #fff;
+  border-radius: 30px;
+  padding: 3px 7px;
+  font-size: 9px;
+  margin: 0 10px;
+  background-color: rgb(66, 214, 151);
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h3 .small-text {
+  font-size: 16px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h3 .text-blue {
+  color: #3251F4;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card strong {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #6e6e6e;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h5 span {
+  font-weight: 500;
+  color: #000;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card h5 strong {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card .order-card-footer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card .order-card-footer p a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card .order-card-footer p span {
+  color: #6e6e6e;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card .order-card-footer .btn {
+  border: 1px solid #3251F4;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #000;
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two-Content .tab-content .order-content-card .order-card-footer .btn img {
+  height: 20px;
+  margin-left: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */
