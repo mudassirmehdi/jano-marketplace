@@ -1427,6 +1427,38 @@ body {
     height: 100vh;
 
     // padding: 20px;
+
+    .tab-head {
+        margin-bottom: 30px;
+        h4 { 
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px; 
+            text-transform: capitalize;
+            color: #000;
+            margin-bottom: 0px;
+        }
+
+        .tab-head-btn {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            align-items: center;
+
+            .btn {
+                padding: 10px 40px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px; 
+                text-transform: capitalize;
+
+            } 
+        }
+    }
+
+
     .Order-Tab-One {
         .nav-tabs {
             // border: none;
@@ -1452,15 +1484,6 @@ body {
         .tab-content {
             padding: 32px;
             .tab-pane {
-                h4 { 
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 24px; 
-                    text-transform: capitalize;
-                    color: #000;
-                    margin-bottom: 32px;
-                }
 
                 .Order-Tab-Two {
                     .nav-tabs {

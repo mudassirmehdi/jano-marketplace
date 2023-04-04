@@ -3208,6 +3208,32 @@ body {
   overflow-y: scroll;
   height: 100vh;
 }
+.order-main .tab-head {
+  margin-bottom: 30px;
+}
+.order-main .tab-head h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 0px;
+}
+.order-main .tab-head .tab-head-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+.order-main .tab-head .tab-head-btn .btn {
+  padding: 10px 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+}
 .order-main .Order-Tab-One .nav-tabs {
   border-bottom: 1px solid #D0D0D0;
 }
@@ -3226,15 +3252,6 @@ body {
 }
 .order-main .Order-Tab-One .tab-content {
   padding: 32px;
-}
-.order-main .Order-Tab-One .tab-content .tab-pane h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  text-transform: capitalize;
-  color: #000;
-  margin-bottom: 32px;
 }
 .order-main .Order-Tab-One .tab-content .tab-pane .Order-Tab-Two .nav-tabs {
   border: 1px solid #D0D0D0;
