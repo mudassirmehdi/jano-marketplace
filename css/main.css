@@ -3166,4 +3166,38 @@ body {
   margin-bottom: 0px;
 }
 
+.buyer-comunity {
+  /* fix blank or flashing items on carousel */
+  /* end fix */
+}
+.buyer-comunity .carousel-wrap {
+  margin: 20px 0;
+  width: 100%;
+  position: relative;
+}
+.buyer-comunity .owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.12);
+  border-radius: 19px;
+  padding: 20px;
+  -webkit-backface-visibility: hidden;
+}
+.buyer-comunity .owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+.buyer-comunity .owl-nav i {
+  font-size: 52px;
+}
+.buyer-comunity .owl-nav .owl-prev {
+  left: -30px;
+}
+.buyer-comunity .owl-nav .owl-next {
+  right: -30px;
+}
+
 /*# sourceMappingURL=main.css.map */
