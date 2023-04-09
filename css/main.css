@@ -1827,6 +1827,12 @@ header .verified-listing-card .verified-listing-content p {
   }
 }
 
+.business-listing {
+  width: 100%;
+  padding: 50px 0 100px 0;
+  background: #F6F9FA;
+}
+
 .listing-card {
   background: #FFFFFF;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
@@ -1946,6 +1952,429 @@ header .verified-listing-card .verified-listing-content p {
   margin-bottom: 0px;
 }
 
+.form-stepper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+
+.form-stepper .card {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+}
+
+.form-stepper .card .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.form-stepper .card .left-side {
+  width: 35%;
+  background-color: #304767;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/*left-side-start*/
+.form-stepper .left-heading {
+  color: #fff;
+}
+
+.form-stepper .steps-content {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.form-stepper .steps-content p {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.form-stepper .progress-bar {
+  list-style: none;
+  /*color:#fff;*/
+  margin-top: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  counter-reset: container 0;
+}
+
+.form-stepper .progress-bar li {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 50px;
+  counter-increment: container 1;
+  color: #4f6581;
+}
+
+.form-stepper .progress-bar li::before {
+  content: counter(container);
+  line-height: 25px;
+  text-align: center;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #4f6581;
+  border-radius: 50%;
+  left: -40px;
+  top: -5px;
+  z-index: 10;
+  background-color: #304767;
+}
+
+.form-stepper .progress-bar li::after {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 2px;
+  background-color: #4f6581;
+  z-index: 1;
+  left: -27px;
+  top: -70px;
+}
+
+.form-stepper .progress-bar li.active::after {
+  background-color: #fff;
+}
+
+.form-stepper .progress-bar li:first-child:after {
+  display: none;
+}
+
+/*.progress-bar li:last-child:after{*/
+/*  display:none;  */
+/*}*/
+.form-stepper .progress-bar li.active::before {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.form-stepper .progress-bar li.active {
+  color: #fff;
+}
+
+.form-stepper .d-none {
+  display: none;
+}
+
+/*left-side-end*/
+.container .card .right-side {
+  width: 65%;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/*right-side-start*/
+.main {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.main {
+  padding: 40px;
+}
+
+.main small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  height: 30px;
+  width: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  color: yellow;
+  font-size: 19px;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.congrats {
+  text-align: center;
+}
+
+.text p {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #cbced4;
+}
+
+.input-text {
+  margin: 30px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.input-text .input-div {
+  width: 100%;
+  position: relative;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid #cbced4;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid #cbced4;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
+
+.input-text .input-div span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+.input-div input:focus ~ span, .input-div input:valid ~ span {
+  top: -15px;
+  left: 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.input-div span {
+  top: -15px;
+  left: 6px;
+  font-size: 10px;
+}
+
+.buttons button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0075ff;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button_space {
+  display: flex;
+  gap: 20px;
+}
+
+.button_space button:nth-child(1) {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.user_card {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 200px;
+  width: 100%;
+  border: 1px solid #c7d3d9;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.user_card span {
+  height: 80px;
+  width: 100%;
+  background-color: #dfeeff;
+}
+
+.circle {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+.circle span {
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.circle span img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+
+.social span {
+  height: 30px;
+  width: 30px;
+  border-radius: 7px;
+  background-color: #fff;
+  border: 1px solid #cbd6dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  color: #cbd6dc;
+}
+
+.social span i {
+  cursor: pointer;
+}
+
+.heart {
+  color: red !important;
+}
+
+.share {
+  color: red !important;
+}
+
+.user_name {
+  position: absolute;
+  top: 110px;
+  margin: 10px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user_name h3 {
+  color: #4c5b68;
+}
+
+.detail {
+  /*margin-top:10px;*/
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.detail p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.detail p a {
+  text-decoration: none;
+  color: blue;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+.warning {
+  border: 1px solid red !important;
+}
+
+/*right-side-end*/
+@media (max-width: 750px) {
+  .container {
+    height: scroll;
+  }
+  .container .card {
+    max-width: 350px;
+    height: auto !important;
+    margin: 30px 0;
+  }
+  .container .card .right-side {
+    width: 100%;
+  }
+  .input-text {
+    display: block;
+  }
+  .input-text .input-div {
+    margin-top: 20px;
+  }
+  .container .card .left-side {
+    display: none;
+  }
+}
 .footer {
   background: #061F3C;
   margin-top: auto;
@@ -2023,14 +2452,730 @@ header .verified-listing-card .verified-listing-content p {
     max-width: 1500px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .section-padding {
+    padding: 60px 0 !important;
+  }
+  .order-confirm-main .order-tracking {
+    background: #FBFDFB;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px !important;
+  }
+  .order-confirm-main .order-tracking h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px !important;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #525252;
+  }
+  .order-confirm-main .order-tracking h2 a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #3251F4;
+  }
+  .order-confirm-main .order-tracking p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #9B9898;
+  }
+  .order-confirm-main .order-tracking p a {
+    color: #3251F4;
+    text-decoration: none;
+  }
+  .order-confirm-main .order-tracking p span {
+    font-size: 17px;
+    color: #595959;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card {
+    border: 1px solid #CFCFCF;
+    background: #FBFDFB;
+    border-radius: 18px;
+    margin-bottom: 30px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body {
+    padding: 40px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .meta-info {
+    margin-bottom: 26px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .meta-info .meta-info-items h6 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #131313;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .meta-info .meta-info-items h5 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #717171;
+    background: rgba(102, 153, 251, 0.3);
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .price {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 0px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group {
+    background: #ECECEC;
+    border-radius: 49px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group .border-left {
+    border-left: 1px solid #E1E1E1;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group .border-right {
+    border-right: 1px solid #E1E1E1;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group button {
+    border-color: #E1E1E1;
+    border: none;
+    border-bottom: none;
+    color: #000000;
+    padding: 16px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #000000;
+    background-color: transparent !important;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group button:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card .card-body .order-confirm-listing-detail .btn-group button:hover {
+    outline: none;
+    box-shadow: none;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body h4 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #606060;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body .btn-outline-primary {
+    border: 1px solid #888888;
+    border-radius: 45px;
+    padding: 14px 18px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body .btn-outline-primary:hover {
+    color: #fff;
+    background: #3251F4;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body .btn-primary {
+    border-radius: 45px;
+    padding: 14px 18px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    background: #3251F4;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body .btn-outline-danger {
+    border: 1px solid #FE696A;
+    border-radius: 45px;
+    color: #FE696A;
+    padding: 14px 40px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .order-confirm-main .order-confirm-content .order-confirm-card-2 .card-body .btn-outline-danger:hover {
+    color: #fff;
+  }
+  .order-confirm-sidebar .card {
+    background: #FBFDFB;
+    border-radius: 7px;
+    border: none;
+  }
+  .order-confirm-sidebar .card-countdown {
+    background: #FBFDFB;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+  }
+  .order-confirm-sidebar .card-countdown .card-header {
+    padding: 40px 20px;
+    background: #FBFDFB;
+    border: none;
+  }
+  .order-confirm-sidebar .card-countdown .card-header h6 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer {
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    background: #FBFDFB;
+    border-radius: 10px;
+    border: none;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer:root {
+    --smaller: .75;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer html {
+    height: 100%;
+    margin: 0;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer body {
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    background-color: #ffd54f;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer ul {
+    margin-bottom: 20px;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer li {
+    font-family: "Poppins";
+    font-style: normal;
+    color: #000000;
+    display: inline-block;
+    border-right: 2px solid #D9D9D9;
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0 12px;
+    max-width: 200px;
+    text-transform: uppercase;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer li span {
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer li:last-child {
+    border: none;
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer .count-btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    display: block !important;
+    padding: 10px 120px !important;
+    background: #3251F4;
+    border-radius: 32px;
+    font-size: 14px;
+    margin-block: 12px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 768px) {
+  .order-confirm-sidebar .card-countdown .countdown-timer h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  .order-confirm-sidebar .card-countdown .countdown-timer li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+@media only screen and (max-width: 600px) {
+  .order-confirm-sidebar .card-countdown #countdown ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .order-confirm-sidebar .author-info {
+    background: #FBFDFB;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+  }
+  .order-confirm-sidebar .author-info .card-header {
+    padding: 40px 30px;
+    background: #FBFDFB;
+    border: none;
+  }
+  .order-confirm-sidebar .author-info .card-header h6 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  .order-confirm-sidebar .author-info .card-body {
+    padding: 0px 30px 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-profile {
+    margin-bottom: 0px;
+    position: relative;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-profile .verify-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 60%;
+    transform: translate(100%, 80%);
+  }
+  .order-confirm-sidebar .author-info .card-body .author-profile .rounded-circle {
+    height: 140px;
+    width: 140px;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-detail h4 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-detail h4 .rating {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #FFAE12;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-detail h4 .rating img {
+    height: 20px;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-detail p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-left: -50px;
+  }
+  .order-confirm-sidebar .author-info .card-body .author-detail .location {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-left: -50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .order-confirm-sidebar .card-dismiss-order {
+    padding: 20px;
+  }
+  .order-confirm-sidebar .card-dismiss-order .card-body p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #F51B1B;
+    margin-bottom: 0px;
+  }
+  .order-confirm-sidebar .card-dismiss-order .card-body p a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero-main {
+    width: 100%;
+    padding: 70px 0 200px 0 !important;
+    background: url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .hero-main .hero-content {
+    margin-bottom: 50px;
+  }
+  .hero-main .hero-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 21px !important;
+    line-height: 40px !important;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  .hero-main .hero-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px !important;
+    line-height: 40px !important;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+  .hero-main .hero-search .search-form {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.09);
+    border-radius: 43px;
+    padding: 8px;
+    margin-bottom: 30px !important;
+  }
+  .hero-main .hero-search .search-form .input-group .form-control {
+    border: none;
+    background-color: transparent;
+  }
+  .hero-main .hero-search .search-form .input-group .form-control::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: lowercase;
+    color: #838383;
+  }
+  .hero-main .hero-search .search-form .input-group .form-control:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  .hero-main .hero-search .search-form .input-group button {
+    background: #3251F4;
+    border-radius: 49px !important;
+    padding: 16px 20px !important;
+  }
+  .hero-main .hero-search .hero-tags h6 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 0px !important;
+  }
+  .hero-main .hero-search .hero-tags .tags-list {
+    display: flex;
+    overflow: hidden !important;
+  }
+  .hero-main .hero-search .hero-tags .tags-list a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(17px);
+    margin: 10px 12px !important;
+    padding: 8px 32px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .verified-listing-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.11);
+    border-radius: 9px;
+    padding: 50px 20px !important;
+    margin-top: -100px;
+    margin-bottom: 170px;
+  }
+  .verified-listing-card .verified-listing-content h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .verified-listing-card .verified-listing-content p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #727171;
+    margin-bottom: 50px;
+  }
+  .verified-listing-card .verified-listing-content a {
+    display: inline-block;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section-heading h3 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px !important;
+    line-height: 50px;
+    color: #242424;
+    margin-bottom: 30px;
+  }
+  .section-heading p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+    margin-bottom: 46px;
+  }
+  .section-heading .heading-action {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #3251F4;
+    text-decoration: none;
+  }
+  .section-heading .heading-action img {
+    margin-left: 1rem;
+    height: 15px;
+  }
+  .section-heading .filters-pills {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-heading .filters-pills li {
+    margin-right: 1rem;
+    margin-bottom: 40px !important;
+  }
+  .section-heading .filters-pills li .active {
+    background: #3251F4;
+    color: #FFFFFF;
+  }
+  .section-heading .filters-pills li a {
+    border: 1px solid #3251F4;
+    border-radius: 37px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 24px;
+    color: #242424;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 12px 28px;
+  }
+  .section-heading .filters-pills li a:hover {
+    background: #3251F4;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .listing-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 13px;
+    margin-bottom: 50px;
+  }
+  .listing-card .listing-card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .listing-card .listing-card-content {
+    padding: 30px 20px !important;
+  }
+  .listing-card .listing-card-content .verified-icon {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    text-transform: capitalize;
+  }
+  .listing-card .listing-card-content .verified-listing-badge {
+    display: flex;
+    align-items: center;
+  }
+  .listing-card .listing-card-content .verified-listing-badge h5 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8A8A8A;
+    margin-bottom: 0;
+    padding-right: 18px;
+  }
+  .listing-card .listing-card-content .verified-listing-badge img {
+    height: 25px;
+  }
+  .listing-card .listing-card-content .price h5 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #8C8888;
+  }
+  .listing-card .listing-card-content .price h4 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    color: #000000;
+  }
+  .listing-card .listing-card-content .listing-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #242424;
+    margin-bottom: 16px;
+  }
+  .listing-card .listing-card-content .meta-info {
+    margin-bottom: 20px;
+  }
+  .listing-card .listing-card-content .meta-info .meta-info-items h6 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #131313;
+  }
+  .listing-card .listing-card-content .meta-info .meta-info-items h5 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #717171;
+    background: rgba(102, 153, 251, 0.3);
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
+  .listing-card .listing-card-content p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #777777;
+  }
+  .listing-card .listing-card-content .other-info {
+    margin-bottom: 20px;
+  }
+  .listing-card .listing-card-content .other-info .other-info-items h6 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #777777;
+    margin-bottom: 0px;
+  }
+  .listing-card .listing-card-content .other-info .other-info-items h5 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #242424;
+    margin-bottom: 0px;
+  }
+}
 body {
   overflow-x: hidden !important;
-}
-
-.business-listing {
-  width: 100%;
-  padding: 50px 0 100px 0;
-  background: #F6F9FA;
 }
 
 .section-padding {
@@ -3204,9 +4349,9 @@ body {
   background: #F9F9F9;
   border: 1px solid #D0D0D0;
   border-radius: 10px;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 100vh;
 }
 .order-main .tab-head {
   margin-bottom: 30px;

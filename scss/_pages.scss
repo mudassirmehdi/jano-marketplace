@@ -2,11 +2,7 @@ body {
     overflow-x: hidden !important;
 }
 
-.business-listing {
-    width: 100%;
-    padding: 50px 0 100px 0;
-    background: #F6F9FA;
-}
+
 
 .section-padding {
     padding: 100px 0;
@@ -1421,10 +1417,11 @@ body {
 .order-main {
     background: #F9F9F9;
     border: 1px solid #D0D0D0;
-    border-radius: 10px; 
+    border-radius: 10px;  
+    height: 100vh; 
+
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 100vh;
 
     // padding: 20px;
 
@@ -1482,6 +1479,7 @@ body {
         }
 
         .tab-content {
+            
             padding: 32px;
             .tab-pane {
 
@@ -1520,6 +1518,7 @@ body {
 
                 .Order-Tab-Two-Content {
                     .tab-content {
+                        
                         .order-content-card {
                             border: 1px solid #D0D0D0;
                             padding: 20px;
