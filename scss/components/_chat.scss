@@ -640,7 +640,7 @@
         @media (max-width: 767px) {
             .chat-icon {
                 display: block;
-                margin-right: 5px;
+                margin-right: 15px;
             }
             .chatlist {
                 width: 100%;
@@ -667,7 +667,8 @@
                 }
                 .flex-shrink-0 {
                     img {
-                        height: 30px;
+                        height: 70px;
+                        width: 70px;
                     }
                 }
             }

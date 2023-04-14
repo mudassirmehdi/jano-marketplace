@@ -75,7 +75,7 @@
              </nav>
         </div> 
 
-        <nav class="navbar navbar-main navbar-expand-lg">
+        <nav class="navbar navbar-main navbar-expand-lg d-none d-md-block">
            <div class="container">
              <a class="navbar-brand me-lg-5" href="#">
                <img src="images/logo.svg" height="30" alt="">
@@ -92,7 +92,7 @@
   
                 <button class="navbar-toggler d-lg-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <img src="images/icons/icon-humburger-menu.svg" alt="">
-                </button>
+                </button> 
             </div>
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -125,33 +125,60 @@
    <section class="dashboard-main section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-                <div class="dashboard-sidebar">
-                    <div class="sidebar-profile mb-4">
-                        <div class="profile-img">
-                            <img src="images/profile.png" class="img-fluid rounded-circle">
-                        </div>
-                        <div class="profile-content">
-                            <h6>Welcome,</h6>
-                            <h3>sheraz naseem</h3>
-                            <p>@sheraz naseem</p>
-                        </div>
-                    </div>
-                    <div class="sidebar-links mb-4">
-                        <nav class="nav flex-column">
-                            <a class="nav-link " href="#"><img src="images/icons/icon-meter.svg" class="me-3"> overview</a>
-                            <a class="nav-link active" href="#"><img src="images/icons/icon-envelope.svg" class="me-3"> message</a>
-                            <a class="nav-link" href="#"> <img src="images/icons/icon-bell.svg" class="me-3">Notifications </a> 
-                            <a class="nav-link" href="#"><img src="images/icons/card-tag.svg" class="me-3">Selling </a> 
-                            <a class="nav-link" href="#"><img src="images/icons/icon-invoice.svg" class="me-3">Invoices </a> 
-                            <a class="nav-link" href="#"><img src="images/icons/icon-eye-1.svg" class="me-3">Watching </a> 
-                            <a class="nav-link" href="#"><img src="images/icons/icon-buy.svg" class="me-3">Buying </a> 
-                            <a class="nav-link" href="#"><img src="images/icons/icon-heart.svg" class="me-3">Saved Searches </a> 
-                        </nav>
-                    </div>
-                </div>
+
+          <div class="col-2 d-block d-lg-none">
+            <div class="mobile-sidebar-dasboard">
+              <div class="sidebar-logo">
+                <img src="images/logo.svg" height="20" alt="">
+              </div>
+
+              <div class="sidebar-link">
+                <nav class="nav flex-column">
+                  <a class="nav-link " href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="overview"><img src="images/icons/icon-meter-light.svg"> </a>
+                  <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="message"><img src="images/icons/icon-envelope-light.svg"> </a>
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Notifications"> <img src="images/icons/icon-bell-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Selling"><img src="images/icons/card-tag-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Invoices"><img src="images/icons/icon-invoice-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Watching"><img src="images/icons/icon-eye-1-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Buying"><img src="images/icons/icon-buy-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Saved Searches"><img src="images/icons/icon-heart-light.svg">  </a> 
+                </nav>
+              </div>
             </div>
-            <div class="col-lg-9">
+          </div>
+
+          <div class="col-lg-3 d-none d-lg-block">
+
+              <div class="dashboard-sidebar">
+                  <div class="sidebar-profile mb-4">
+                      <div class="profile-img">
+                          <img src="images/profile.png" class="img-fluid rounded-circle">
+                      </div>
+                      <div class="profile-content">
+                          <h6>Welcome,</h6>
+                          <h3>sheraz naseem</h3>
+                          <p>@sheraz naseem</p>
+                      </div>
+                  </div>
+                  <div class="sidebar-links mb-4">
+                      <nav class="nav flex-column">
+                          <a class="nav-link " href="#"><img src="images/icons/icon-meter.svg" class="me-3"> overview</a>
+                          <a class="nav-link active" href="#"><img src="images/icons/icon-envelope.svg" class="me-3"> message</a>
+                          <a class="nav-link" href="#"> <img src="images/icons/icon-bell.svg" class="me-3">Notifications </a> 
+                          <a class="nav-link" href="#"><img src="images/icons/card-tag.svg" class="me-3">Selling </a> 
+                          <a class="nav-link" href="#"><img src="images/icons/icon-invoice.svg" class="me-3">Invoices </a> 
+                          <a class="nav-link" href="#"><img src="images/icons/icon-eye-1.svg" class="me-3">Watching </a> 
+                          <a class="nav-link" href="#"><img src="images/icons/icon-buy.svg" class="me-3">Buying </a> 
+                          <a class="nav-link" href="#"><img src="images/icons/icon-heart.svg" class="me-3">Saved Searches </a> 
+                      </nav>
+
+                      <div class="sidebar-bottom-img">
+                        <img src="images/sidebar-bottom-circle.png" alt="" class="img-fluid w-100">
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <div class="col-10 col-lg-9">
                 <div class="dashboard-content">
                     <div class="chat-main">
                         <section class="message-area">
@@ -236,7 +263,7 @@
                                               <div class="col-8">
                                                 <div class="d-flex align-items-center">
                                                     <span class="chat-icon">
-                                                      <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/arroleftt.svg" alt="image title">
+                                                      <img class="img-fluid" src="images/icons/icon-chat-back.svg" alt="image title">
                                                     </span>
                                                   
                                                     <div class="d-flex align-items-center">
@@ -258,13 +285,13 @@
                                               <div class="col-4">
                                                 <ul class="moreoption">
 
-                                                  <li class="navbar nav-item">
+                                                  <li class="navbar nav-item d-none d-md-block">
                                                     <a class="nav-link" href="#" >
                                                       <img src="images/icons/icon-audio-call.svg" alt="">
                                                     </a> 
                                                   </li>
 
-                                                  <li class="navbar nav-item">
+                                                  <li class="navbar nav-item d-none d-md-block">
                                                     <a class="nav-link" href="#" >
                                                       <img src="images/icons/icon-video-call.svg" alt="">
                                                     </a> 
@@ -361,7 +388,7 @@
 
 
 
-   <footer id="footer" class="footer">
+   <footer id="footer" class="footer d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -422,6 +449,8 @@
 </footer>
 
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
     <script>
           jQuery(document).ready(function () {
             $(".chat-list a").click(function () {
@@ -433,6 +462,9 @@
             $(".chatbox").removeClass("showbox");
             });
         });
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
     <script src="js/main.js"></script>
   </body>

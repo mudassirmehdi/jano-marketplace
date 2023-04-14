@@ -995,18 +995,13 @@ header .verified-listing-card .verified-listing-content p {
 .dashboard-sidebar .sidebar-links {
   background: #FBFDFB;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.13);
-  height: 100vh;
+  height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.dashboard-sidebar .sidebar-links::before {
-  content: url("../images/sidebar-bottom-circle.png");
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  transform: translate(0px, 5px);
-  object-fit: cover;
+.dashboard-sidebar .sidebar-links .nav {
+  margin-bottom: 100px;
 }
 .dashboard-sidebar .sidebar-links .nav .nav-link {
   font-family: "Poppins";
@@ -1023,6 +1018,9 @@ header .verified-listing-card .verified-listing-content p {
   color: #fff;
   background-color: #3251F4;
   border-radius: 10px;
+}
+.dashboard-sidebar .sidebar-links .sidebar-bottom-img {
+  margin-top: auto;
 }
 
 .order-confirm-sidebar .card {
@@ -1216,6 +1214,26 @@ header .verified-listing-card .verified-listing-content p {
 .order-confirm-sidebar .card-dismiss-order .card-body p a {
   color: #000;
   text-decoration: none;
+}
+
+.mobile-sidebar-dasboard {
+  background: #061F3B;
+  height: 100%;
+}
+.mobile-sidebar-dasboard .sidebar-logo {
+  padding: 20px 10px;
+}
+.mobile-sidebar-dasboard .sidebar-link .nav .nav-link {
+  text-align: center;
+  padding: 24px 10px;
+  border-bottom: 1px solid #D6D6D6;
+}
+.mobile-sidebar-dasboard .sidebar-link .nav .nav-link img {
+  height: 30px;
+  width: 30px;
+}
+.mobile-sidebar-dasboard .sidebar-link .nav .nav-link:last-child {
+  border-bottom: none;
 }
 
 .chat-main .message-area {
@@ -1771,7 +1789,7 @@ header .verified-listing-card .verified-listing-content p {
 @media (max-width: 767px) {
   .chat-main .chat-icon {
     display: block;
-    margin-right: 5px;
+    margin-right: 15px;
   }
   .chat-main .chatlist {
     width: 100%;
@@ -1796,7 +1814,8 @@ header .verified-listing-card .verified-listing-content p {
     font-size: 12px;
   }
   .chat-main .msg-head .flex-shrink-0 img {
-    height: 30px;
+    height: 70px;
+    width: 70px;
   }
   .chat-main .send-box {
     background: #F9F9F9;
@@ -2027,6 +2046,25 @@ header .verified-listing-card .verified-listing-content p {
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1500px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dashboard-main {
+    padding: 0px !important;
+  }
+  .dashboard-main .container {
+    padding: 0px;
+    margin: 0px;
+  }
+  .dashboard-main .container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .dashboard-main .container .row > * {
+    padding: 0px;
+  }
+  .dashboard-main.section-padding {
+    padding: 0px !important;
   }
 }
 @media only screen and (max-width: 600px) {

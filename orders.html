@@ -75,7 +75,7 @@
              </nav>
         </div> 
 
-        <nav class="navbar navbar-main navbar-expand-lg">
+        <nav class="navbar navbar-main navbar-expand-lg d-none d-md-block">
            <div class="container">
              <a class="navbar-brand me-lg-5" href="#">
                <img src="images/logo.svg" height="30" alt="">
@@ -91,8 +91,8 @@
                 </a>
   
                 <button class="navbar-toggler d-lg-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                 <img src="images/icons/icon-humburger-menu.svg" alt="">
-                </button>
+                  <img src="images/icons/icon-humburger-menu.svg" alt="">
+                 </button> 
             </div>
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -125,7 +125,33 @@
    <section class="dashboard-main section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
+
+          <div class="col-2 d-block d-lg-none">
+            <div class="mobile-sidebar-dasboard">
+              <div class="sidebar-logo">
+                <img src="images/logo.svg" height="20" alt="">
+              </div>
+
+              <div class="sidebar-link">
+                <nav class="nav flex-column">
+                  <a class="nav-link " href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="overview"><img src="images/icons/icon-meter-light.svg"> </a>
+                  <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="message"><img src="images/icons/icon-envelope-light.svg"> </a>
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Notifications"> <img src="images/icons/icon-bell-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Selling"><img src="images/icons/card-tag-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Invoices"><img src="images/icons/icon-invoice-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Watching"><img src="images/icons/icon-eye-1-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Buying"><img src="images/icons/icon-buy-light.svg"> </a> 
+                  <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Saved Searches"><img src="images/icons/icon-heart-light.svg">  </a> 
+                </nav>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="col-lg-3 d-none d-lg-block">
+      
+
+
                 <div class="dashboard-sidebar">
                     <div class="sidebar-profile mb-4">
                         <div class="profile-img">
@@ -148,10 +174,14 @@
                             <a class="nav-link" href="#"><img src="images/icons/icon-buy.svg" class="me-3">Buying </a> 
                             <a class="nav-link" href="#"><img src="images/icons/icon-heart.svg" class="me-3">Saved Searches </a> 
                         </nav>
+
+                        <div class="sidebar-bottom-img">
+                          <img src="images/sidebar-bottom-circle.png" alt="" class="img-fluid w-100">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-10 col-lg-9">
                 <div class="dashboard-content">
                    <div class="order-main">
                        <div class="Order-Tab-One">
@@ -167,7 +197,7 @@
                           <div class="tab-content" id="Tab1Content">
                             <div class="tab-pane fade show active" id="order-as-client-pane" role="tabpanel" aria-labelledby="order-as-client" tabindex="0">
                                 
-                               <div class="d-flex justify-content-between align-items-center tab-head">
+                               <div class="d-flex justify-content-between align-items-center tab-head  flex-wrap gap-4">
                                 <h4>Your Orders as Buyer</h4>
 
                                 <div class="tab-head-btn">
@@ -198,7 +228,7 @@
                                </div>
 
 
-                                <div class="row">
+                                <div class="row gap-4 gap-md-0">
                                     <div class="col-md-3">
                                         <div class="Order-Tab-Two">
                                             <ul class="nav nav-tabs flex-column nav-fill" id="myTab" role="tablist">
@@ -481,7 +511,7 @@
 
 
 
-   <footer id="footer" class="footer">
+   <footer id="footer" class="footer d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col-lg-4">

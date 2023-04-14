@@ -140,13 +140,218 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-12">
-                <h5 class="search-results">Showing 1-9 of 50 results</h5>
+               <div class="d-flex justify-content-between align-items-center">
+                <h5 class="search-results mb-0">Showing 1-9 of 50 results</h5>
+
+              
+               
+                  <button class=" btn d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <img src="images/icons/icon-sidebar.png" alt="" width="30">
+                  </button>
+                  
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Showing 1-9 of 50 results</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="search-sidebar d-block d-lg-none">
+                            <div class="filter-bar mb-4"> 
+                                   <p> <a href="#"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
+                                   <p> <a href="#">clear</a> </p> 
+                            </div>
+        
+                            <div class="search-sidebar-accordians">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item mb-4">
+                                        <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            keywords
+                                        </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="keyword-input">
+                                                    <input type="text" class="form-control" placeholder="enter keywords">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item mb-4">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Asset Type
+                                        </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                               <div class="accordion-checkboxes">
+                                                    
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            Domains
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Website
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Channels
+                                                        </label>
+                                                    </div> 
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Accounts
+                                                        </label>
+                                                    </div> 
+        
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+        
+                                    <div class="accordion-item mb-4">
+                                        <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Sale Type
+                                        </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="accordion-checkboxes">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            Auctions
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Classified
+                                                        </label>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item mb-4">
+                                        <h2 class="accordion-header" id="headingFoure">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFoure" aria-expanded="false" aria-controls="collapseFoure">
+                                            Industry
+                                        </button>
+                                        </h2>
+                                        <div id="collapseFoure" class="accordion-collapse collapse" aria-labelledby="headingFoure" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="accordion-checkboxes">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            General
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Popular domain names
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            eCommerce
+                                                        </label>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+        
+                                    <div class="accordion-item mb-4">
+                                        <h2 class="accordion-header" id="#">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#$" aria-expanded="false" aria-controls="$">
+                                            Price: 
+                                        </button>
+        
+                                        </h2>
+                                        <div id="#" class="accordion-collapse collapse show" aria-labelledby="#" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body"> 
+                                                    <div class="range-slider">
+                                                        <span>
+                                                            $<input type="number" value="0" min="0" max="15,340,000"/>
+                                                            $<input type="number" value="15340000" min="0" max="15340000"/>
+                                                        </span>
+                                                        <input value="0" min="0" max="15,340,000" step="500" type="range"/>
+                                                        <input value="15,340,000" min="0" max="15340000" step="500" type="range"/>
+                                                    </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    
+        
+                                    <div class="accordion-item mb-4">
+                                        <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Location
+                                        </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="accordion-checkboxes">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                            Pakistan
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            sri lanka
+                                                        </label>
+                                                    </div>
+        
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            United State
+                                                        </label>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+               </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg-3">
-                <div class="search-sidebar">
+                <div class="search-sidebar d-none d-lg-block">
                     <div class="filter-bar mb-4"> 
                            <p> <a href="#"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
                            <p> <a href="#">clear</a> </p> 
@@ -1124,13 +1329,13 @@
         </div>
 
         <div class="row justify-content-center align-items-center">
-            <div class="col-lg-3 mx-lg-3">
+            <div class="col-lg-3 mx-lg-3 mb-4 mb-md-0">
                 <div  class="join-card text-center">
                     <img src="images/write-notes.svg" alt="">
                     <h6>Click to Register for Free</h6>
                 </div>
             </div>
-            <div class="col-lg-3 mx-lg-3">
+            <div class="col-lg-3 mx-lg-3 mb-4 mb-md-0">
                 <div  class="join-card text-center">
                     <img src="images/read-book.svg" alt="">
                     <h6>learn more</h6>
@@ -1218,7 +1423,7 @@
                 items: 1
                 },
                 600: {
-                items: 3
+                items: 1
                 },
                 1000: {
                 items: 4
