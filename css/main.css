@@ -753,6 +753,12 @@ header .verified-listing-card .verified-listing-content p {
   height: 25px;
   margin-right: 13px;
 }
+.search-sidebar .search-sidebar-accordians .price-accordian .accordion-button {
+  background-color: transparent !important;
+}
+.search-sidebar .search-sidebar-accordians .price-accordian .accordion-button:after {
+  background-image: none !important;
+}
 .search-sidebar .search-sidebar-accordians .accordion .accordion-item {
   border: none;
   background-color: #ffffff;
@@ -838,119 +844,57 @@ header .verified-listing-card .verified-listing-content p {
   margin-left: 10px;
   margin-bottom: 0px;
 }
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .range-slider {
-  width: 300px;
-  margin: auto;
-  text-align: center;
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider {
+  width: 100%;
+  float: left;
+  z-index: 999;
+}
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-value {
   position: relative;
-  height: 6em;
+  margin: 0;
 }
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .range-slider svg,
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .range-slider input[type=range] {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=number] {
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-value input {
+  width: 100%;
+  background: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: initial;
+  box-shadow: none;
   border: none;
-  font-size: 13px;
-  -moz-appearance: textfield;
+}
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-value .amount {
+  position: absolute;
+  top: -3.6rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #000000;
+  right: -11.5rem;
+}
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-bar {
+  border: none;
+  background: #E4E4E4;
+  border-radius: 6px;
+  height: 15px;
   width: 100%;
+  margin-left: 0px;
 }
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=number]::-webkit-outer-spin-button,
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-bar .ui-slider-range {
+  background: #3251F4;
 }
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=number]:invalid,
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=number]:out-of-range {
-  border: 2px solid #ff6347;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]:focus {
-  outline: none;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #2497e3;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]:focus::-ms-fill-lower {
-  background: #2497e3;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]:focus::-ms-fill-upper {
-  background: #2497e3;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: #2497e3;
-  border-radius: 1px;
-  box-shadow: none;
-  border: 0;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-webkit-slider-thumb {
-  z-index: 2;
-  position: relative;
-  box-shadow: 0px 0px 0px #000;
-  border: 1px solid #2497e3;
-  height: 18px;
-  width: 18px;
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-bar .ui-slider-handle {
+  border: none;
   border-radius: 25px;
-  background: #a1d0ff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -7px;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: #2497e3;
-  border-radius: 1px;
-  box-shadow: none;
-  border: 0;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-moz-range-thumb {
-  z-index: 2;
-  position: relative;
-  box-shadow: 0px 0px 0px #000;
-  border: 1px solid #2497e3;
-  height: 18px;
-  width: 18px;
-  border-radius: 25px;
-  background: #a1d0ff;
+  background: #E4E4E4;
+  height: 30px;
+  width: 30px;
+  top: -0.52em;
   cursor: pointer;
 }
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-ms-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-ms-fill-lower,
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-ms-fill-upper {
-  background: #2497e3;
-  border-radius: 1px;
-  box-shadow: none;
-  border: 0;
-}
-.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body input[type=range]::-ms-thumb {
-  z-index: 2;
-  position: relative;
-  box-shadow: 0px 0px 0px #000;
-  border: 1px solid #2497e3;
-  height: 18px;
-  width: 18px;
-  border-radius: 25px;
-  background: #a1d0ff;
-  cursor: pointer;
+.search-sidebar .search-sidebar-accordians .accordion .accordion-item .accordion-body .price-range-slider .range-bar .ui-slider-handle + span {
+  background: #242424;
 }
 
 .dashboard-sidebar .sidebar-profile {
@@ -2048,6 +1992,10 @@ header .verified-listing-card .verified-listing-content p {
     max-width: 1500px;
   }
 }
+.detail-sidebar {
+  margin-top: -27rem;
+}
+
 @media only screen and (max-width: 600px) {
   .dashboard-main {
     padding: 0px !important;
@@ -2063,11 +2011,111 @@ header .verified-listing-card .verified-listing-content p {
   .dashboard-main .container .row > * {
     padding: 0px;
   }
+  .about-business h3 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .revenue-profit-section .section-heading button {
+    font-size: 14px !important;
+    padding: 6px 10px !important;
+  }
+  .traffic-analysis-section .section-heading {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .traffic-analysis-section .analysis-action h3 {
+    font-size: 26px !important;
+  }
+  .comment-heading {
+    flex-wrap: wrap;
+  }
+  .comment-heading h4 {
+    font-size: 25px !important;
+  }
+  .comment-heading .stars {
+    margin-left: 0px !important;
+  }
+  .comment-heading .stars img {
+    height: 35px;
+    margin: 0 8px;
+  }
+  .monetization-method h3 {
+    font-size: 20px !important;
+  }
+  .revenue-profit-section .section-heading h4 {
+    font-size: 18px !important;
+  }
+  .detail-sidebar {
+    margin-top: 0rem;
+  }
+  .btn-primary-jm {
+    font-size: 15px !important;
+    padding: 16px 30px !important;
+  }
+  .btn-primary-outline-jm {
+    font-size: 15px !important;
+    padding: 16px 30px !important;
+  }
   .dashboard-main.section-padding {
     padding: 0px !important;
   }
 }
 @media only screen and (max-width: 600px) {
+  .detail-main p {
+    font-size: 14px !important;
+  }
+  .detail-main .verified-listing-badge h5 {
+    font-size: 14px !important;
+  }
+  .detail-main .verified-listing-badge img {
+    height: 20px;
+  }
+  .bread-main .bread-content h2 {
+    font-size: 30px;
+    line-height: 53px;
+    margin-bottom: 32px !important;
+  }
+  .detail-main h2 {
+    font-size: 30px !important;
+    line-height: 0px !important;
+  }
+  .detail-main .listing-type {
+    font-size: 15px !important;
+  }
+  .bread-main .bread-content p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 0px !important;
+  }
+  .faqs-section .faqs-tabs .tab-contents {
+    position: inherit !important;
+    margin-top: 30px !important;
+  }
+  .faqs-section .faqs-tabs {
+    position: inherit !important;
+  }
+  .faqs-section .faqs-tabs .tab-links {
+    position: inherit !important;
+    z-index: 0 !important;
+  }
+  .faqs-section .faqs-tabs .tab-contents .tab-pane {
+    padding: 50px 30px !important;
+    height: auto !important;
+  }
+  .testimonials-slider .carousel .carousel-inner .carousel-item .slider-content .testimonials-img .qoutes-icon {
+    right: 0 !important;
+  }
+  .valuation-slider .carousel .carousel-inner .carousel-item .slider-content h3 {
+    font-size: 28px !important;
+    margin-bottom: 20px !important;
+  }
+  .valuation-slider .carousel .carousel-inner .carousel-item .slider-content p {
+    line-height: 35px !important;
+    font-size: 17px !important;
+  }
+  .valuation-slider .carousel .carousel-inner .carousel-item .man-img {
+    width: 300px;
+  }
   .section-padding {
     padding: 60px 0 !important;
   }
@@ -2494,7 +2542,7 @@ header .verified-listing-card .verified-listing-content p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 21px !important;
+    font-size: 25px !important;
     line-height: 40px !important;
     text-transform: capitalize;
     color: #FFFFFF;
@@ -2503,7 +2551,7 @@ header .verified-listing-card .verified-listing-content p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px !important;
+    font-size: 28px !important;
     line-height: 40px !important;
     text-transform: capitalize;
     color: #FFFFFF;
@@ -3206,6 +3254,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
+  gap: 10px;
 }
 .comment-section .comment-heading h4 {
   margin-bottom: 0;
@@ -3297,7 +3346,7 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25);
   border-radius: 19px;
-  position: relative !important;
+  position: relative;
   right: -45%;
   z-index: -990px;
 }

@@ -4,6 +4,10 @@
     }
 }
 
+
+.detail-sidebar {
+    margin-top: -27rem;
+}
  
 @media only screen and (max-width: 600px) { 
     .dashboard-main {
@@ -21,15 +25,143 @@
         }
     }
 
+
+
+    .about-business h3 {
+        font-size: 16px !important;
+         line-height: 20px !important;
+    }
+
+    .revenue-profit-section .section-heading button {
+        font-size: 14px !important;
+        padding: 6px 10px !important;
+    }
+
+    .traffic-analysis-section .section-heading {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .traffic-analysis-section .analysis-action h3 {
+        font-size: 26px !important;
+    }
+
+
+    .comment-heading { 
+        flex-wrap: wrap; 
+        h4 { 
+            font-size: 25px !important; 
+
+        } 
+        .stars {
+            margin-left: 0px !important;
+            img {
+                height: 35px;
+                margin: 0 8px;
+            }
+        }
+    }
+
+    .monetization-method h3 {
+        font-size: 20px !important;
+    }
+
+    .revenue-profit-section .section-heading h4 {
+        font-size: 18px !important;
+    }
+
+    .detail-sidebar {
+        margin-top: 0rem;
+    }
+
+    .btn-primary-jm {
+        font-size: 15px !important;
+        padding: 16px 30px !important;
+    }
+
+    .btn-primary-outline-jm {
+        font-size: 15px !important;
+        padding: 16px 30px !important;
+    }
+
     .dashboard-main.section-padding {
         padding: 0px !important;
     }
 }
 @media only screen and (max-width: 600px) {
 
+    .detail-main p {
+        font-size: 14px !important;
+    }
+
+    .detail-main .verified-listing-badge h5 {
+        font-size: 14px !important;
+    }
+
+    .detail-main .verified-listing-badge img {
+        height: 20px;
+    }
+
+    .bread-main .bread-content h2 {
+        font-size: 30px;
+        line-height: 53px;
+        margin-bottom: 32px !important;
+    }
+
+    .detail-main h2 {
+        font-size: 30px !important;
+        line-height: 0px !important;
+    }
     
+    .detail-main .listing-type {
+        font-size: 15px !important;
+    }
 
+    .bread-main .bread-content p { 
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 0px !important; 
+      }
 
+    .faqs-section .faqs-tabs .tab-contents {
+        position: inherit !important;
+        margin-top: 30px !important; 
+    }
+
+    .faqs-section .faqs-tabs {
+        position:  inherit !important;
+    }
+
+    .faqs-section .faqs-tabs .tab-links {
+        position:  inherit !important;
+        z-index: 0 !important;
+    }
+
+    .faqs-section .faqs-tabs .tab-contents .tab-pane {
+        padding:50px 30px !important;
+        height: auto !important;
+    }
+   
+    .testimonials-slider .carousel .carousel-inner .carousel-item .slider-content .testimonials-img .qoutes-icon {
+        right: 0 !important;
+    }
+
+    .valuation-slider .carousel .carousel-inner .carousel-item .slider-content h3 {
+        font-size: 28px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .valuation-slider .carousel .carousel-inner .carousel-item .slider-content p {
+        line-height: 35px !important;
+        font-size: 17px !important;
+       
+    }
+
+    .valuation-slider .carousel .carousel-inner .carousel-item  .man-img {
+        width: 300px;
+    }
+
+    
     .section-padding {
         padding: 60px 0 !important;
     }
@@ -532,7 +664,7 @@
                  font-family: 'Montserrat', sans-serif;
                  font-style: normal;
                  font-weight: 800;
-                 font-size: 21px !important;
+                 font-size: 25px !important;
                  line-height: 40px  !important;
                  text-transform: capitalize;
                  color: #FFFFFF;
@@ -542,7 +674,7 @@
                  font-family: 'Montserrat', sans-serif;
                  font-style: normal;
                  font-weight: 700;
-                 font-size: 36px !important;
+                 font-size: 28px !important;
                  line-height: 40px  !important;
                  text-transform: capitalize;
                  color: #FFFFFF;

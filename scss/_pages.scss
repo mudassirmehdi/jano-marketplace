@@ -477,7 +477,8 @@ body {
         margin-bottom: 60px;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: start; 
+        gap: 10px;
         h4 {
             margin-bottom: 0;
             margin-right: 30px;
@@ -591,7 +592,7 @@ body {
             box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.25);
             border-radius: 19px;
             // width: 50%; 
-            position: relative !important;
+            position: relative ;
             right: -45%;
             z-index: -990px;
             

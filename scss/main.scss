@@ -11,6 +11,7 @@ body {
     height: 100%;
 }
 
+
 // Includes the Components CSS 
 
 @import 'components/buttons'; 
@@ -20,8 +21,7 @@ body {
 @import 'components/pagination';
 @import 'components/sidebar';
 @import 'components/chat';
-@import 'components/listing-card';
-@import 'components/stepper-form';
+@import 'components/listing-card'; 
 @import 'components/footer';
 @import 'responsive';
 
