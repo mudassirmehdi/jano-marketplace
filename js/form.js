@@ -17,6 +17,8 @@ const form15 = document.querySelector('#form15');
 const form16 = document.querySelector('#form16');
 const form17 = document.querySelector('#form17');
 const form18 = document.querySelector('#form18');
+const form19 = document.querySelector('#form19');
+const form110 = document.querySelector('#form110');
 
 const form21 = document.querySelector('#form21');
 const form22 = document.querySelector('#form22');
@@ -26,6 +28,8 @@ const form25 = document.querySelector('#form25');
 const form26 = document.querySelector('#form26');
 const form27 = document.querySelector('#form27');
 const form28 = document.querySelector('#form28');
+const form29 = document.querySelector('#form29');
+const form210 = document.querySelector('#form210');
 
 
 const form31 = document.querySelector('#form31');
@@ -36,6 +40,8 @@ const form35 = document.querySelector('#form35');
 const form36 = document.querySelector('#form36');
 const form37 = document.querySelector('#form37');
 const form38 = document.querySelector('#form38');
+const form39 = document.querySelector('#form39');
+const form310 = document.querySelector('#form310');
 
 
 const form41 = document.querySelector('#form41');
@@ -46,6 +52,8 @@ const form45 = document.querySelector('#form45');
 const form46 = document.querySelector('#form46');
 const form47 = document.querySelector('#form47');
 const form48 = document.querySelector('#form48');
+const form49 = document.querySelector('#form49');
+const form410 = document.querySelector('#form410');
 
 
 const icon11 = document.querySelector('#icon11');
@@ -102,13 +110,94 @@ function nextForm(number){
       } else {
         alert("Please fill in all required fields.");
         return "";
-      }
+    }
+    
     viewId=viewId+1;
     progressBar(number);
     displayForms(number);
+    const ss1 = document.getElementById('ss-1');
+    ss1.addEventListener("change", ()=>{
+        const ss1 = document.getElementById('ss-1');
+        const ssPreview1 = document.getElementById('ss-preview-1');
+        updatePreviewDisplay(ss1, ssPreview1);
+    })
+    const ss2 = document.getElementById('ss-2');
+    ss2.addEventListener("change", ()=>{
+        const ss2 = document.getElementById('ss-2');
+        const ssPreview2 = document.getElementById('ss-preview-2');
+        updatePreviewDisplay(ss2, ssPreview2);
+    })
+    const ss3 = document.getElementById('ss-3');
+    ss3.addEventListener("change", ()=>{
+        const ss3 = document.getElementById('ss-3');
+        const ssPreview3 = document.getElementById('ss-preview-3');
+        updatePreviewDisplay(ss3, ssPreview3);
+    })
+    const ss4 = document.getElementById('ss-4');
+    ss4.addEventListener("change", ()=>{
+        const ss4 = document.getElementById('ss-4');
+        const ssPreview4 = document.getElementById('ss-preview-4');
+        updatePreviewDisplay(ss4, ssPreview4);
+    })
+    const attachedFiles1=document.getElementById('attached-files-1')
+    attachedFiles1.addEventListener("change", ()=>{
+        const attachedFiles1 = document.getElementById('attached-files-1');
+        const attachmentsPreview1 = document.getElementById('attachments-preview-1');
+        updatePreviewDisplay(attachedFiles1, attachmentsPreview1);
+    })
+
+    const attachedFiles2=document.getElementById('attached-files-2')
+    attachedFiles2.addEventListener("change", ()=>{
+        const attachedFiles2 = document.getElementById('attached-files-2');
+        const attachmentsPreview2 = document.getElementById('attachments-preview-2');
+        updatePreviewDisplay(attachedFiles2, attachmentsPreview2);
+    })
+
+    const attachedFiles3=document.getElementById('attached-files-3')
+    attachedFiles3.addEventListener("change", ()=>{
+        const attachedFiles3 = document.getElementById('attached-files-3');
+        const attachmentsPreview3 = document.getElementById('attachments-preview-3');
+        updatePreviewDisplay(attachedFiles3, attachmentsPreview3);
+    })
+
+    const attachedFiles4=document.getElementById('attached-files-4')
+    attachedFiles4.addEventListener("change", ()=>{
+        const attachedFiles4 = document.getElementById('attached-files-4');
+        const attachmentsPreview4 = document.getElementById('attachments-preview-4');
+        updatePreviewDisplay(attachedFiles4, attachmentsPreview4);
+    })
 
     console.log(viewId);
 
+}
+
+function updatePreviewDisplay(fileSelector, preview) {
+    while(preview.firstChild) {
+        preview.removeChild(preview.firstChild);
+      }
+    const curFiles = fileSelector.files;
+    if (curFiles.length === 0) {
+      const para = document.createElement('p');
+      para.textContent = 'No files currently selected for upload';
+      preview.appendChild(para);
+    } else {
+      const list = document.createElement('ul');
+      list.style["list-style-type"] = "none";
+      preview.appendChild(list);
+  
+      for (const file of curFiles) {
+        const listItem = document.createElement('li');
+        const para = document.createElement('p');
+        para.textContent = `File name ${file.name}`;
+        const image = document.createElement('img');
+        image.src = URL.createObjectURL(file);
+        image.width=100;
+        image.height=100;
+        listItem.appendChild(image);
+        listItem.appendChild(para);  
+        list.appendChild(listItem);
+      }
+    }
 }
 
 function prevForm(number){
@@ -119,7 +208,16 @@ function prevForm(number){
     displayForms(number);
 }
 function progressBar1(number){
+    debugger
     switch(number){
+        case 0: 
+            domainstep.style.display = 'none';
+            websitestep.style.display = 'none';
+            channelstep.style.display = 'none';
+            accountstep.style.display = 'none';
+            step1.style.display ='block'
+            // openAsset();
+            break;
         case 1:
             if(viewId===1){
                 icon11.classList.add('active');
@@ -281,7 +379,7 @@ function progressBar1(number){
 }
 
 function progressBar(number){
-
+debugger
     switch(number) {
         case 1:
             if(viewId===2){
@@ -410,7 +508,7 @@ function progressBar(number){
 }
 
 function displayForms(formNumber){
-
+debugger
     switch(formNumber) {
         case 1:
             form11.style.display = 'none';
@@ -420,6 +518,9 @@ function displayForms(formNumber){
             form15.style.display = 'none';
             form16.style.display = 'none';
             form17.style.display = 'none';
+            form18.style.display = 'none';
+            form19.style.display = 'none';
+            form110.style.display = 'none';
             if(viewId ===1){
                 form11.style.display = 'block';
             }else if(viewId === 2){
@@ -442,6 +543,12 @@ function displayForms(formNumber){
             else if(viewId === 8){
                 form18.style.display = 'block';
             }
+            else if(viewId === 9){
+                form19.style.display = 'block';
+            }
+            else if(viewId === 10){
+                form110.style.display = 'block';
+            }
           break;
         case 2:
             form21.style.display = 'none';
@@ -451,6 +558,9 @@ function displayForms(formNumber){
             form25.style.display = 'none';
             form26.style.display = 'none';
             form27.style.display = 'none';
+            form28.style.display = 'none';
+            form29.style.display = 'none';
+            form210.style.display = 'none';
             if(viewId ===1){
                 form21.style.display = 'block';
             }else if(viewId === 2){
@@ -473,6 +583,12 @@ function displayForms(formNumber){
             else if(viewId === 8){
                 form28.style.display = 'block';
             }
+            else if(viewId === 9){
+                form29.style.display = 'block';
+            }
+            else if(viewId === 10){
+                form210.style.display = 'block';
+            }
           break;
         case 3:
             form31.style.display = 'none';
@@ -482,6 +598,9 @@ function displayForms(formNumber){
             form35.style.display = 'none';
             form36.style.display = 'none';
             form37.style.display = 'none';
+            form38.style.display = 'none';
+            form39.style.display = 'none';
+            form310.style.display = 'none';
             if(viewId ===1){
                 form31.style.display = 'block';
             }else if(viewId === 2){
@@ -504,6 +623,12 @@ function displayForms(formNumber){
             else if(viewId === 8){
                 form38.style.display = 'block';
             }
+            else if(viewId === 9){
+                form39.style.display = 'block';
+            }
+            else if(viewId === 10){
+                form310.style.display = 'block';
+            }
             break;
         case 4:
             form41.style.display = 'none';
@@ -513,6 +638,9 @@ function displayForms(formNumber){
             form45.style.display = 'none';
             form46.style.display = 'none';
             form47.style.display = 'none';
+            form48.style.display = 'none';
+            form49.style.display = 'none';
+            form410.style.display = 'none';
             if(viewId ===1){
                 form41.style.display = 'block';
             }else if(viewId === 2){
@@ -534,6 +662,12 @@ function displayForms(formNumber){
             }
             else if(viewId === 8){
                 form48.style.display = 'block';
+            }
+            else if(viewId === 9){
+                form49.style.display = 'block';
+            }
+            else if(viewId === 10){
+                form410.style.display = 'block';
             }
             break;
             
@@ -605,12 +739,18 @@ function validateInputs() {
     if(seletectValue=="account"){
         formNo = (viewId==1)?31:(viewId==2)?32:(viewId==3)?33:(viewId==4)?34:(viewId==5)?35:(viewId==6)?36:(viewId==7)?37:38;
     }
-    else{
+    else if(seletectValue=="channel"){
         formNo = (viewId==1)?41:(viewId==2)?42:(viewId==3)?43:(viewId==4)?44:(viewId==5)?45:(viewId==6)?46:(viewId==7)?47:48;
     }
     
     var currentStepInputs = document.querySelectorAll('#form' + formNo + ' input[required]');
     debugger;
+    if(currentStepInputs.length && currentStepInputs[0].value=="facebook"){
+        for (var i = 0; i < currentStepInputs.length; i++) {
+            if(currentStepInputs[i].checked) return true;
+        }
+
+    }
     for (var i = 0; i < currentStepInputs.length; i++) {
         if((currentStepInputs[i].type == "radio" || currentStepInputs[i].type == "checkbox") && !currentStepInputs[i].checked) return false
       if (!currentStepInputs[i].value) {

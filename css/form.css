@@ -29,12 +29,6 @@
 }
 
 
-
-
-
-
-
-
 /*form*/
 
 
@@ -105,7 +99,7 @@
 
 .title__name{
     padding: 0.6rem 0.1rem;
-    margin-bottom: 0.45rem;
+    margin-bottom: 7px;
 }
 
 .title__name h3{
@@ -131,6 +125,10 @@
 .progress__bar__container ul .active{
     background-color: #304767;
 
+}
+
+.progress__bar__container ul {
+    padding: 0px;
 }
 
 .progress__bar__container ul li {
@@ -164,13 +162,13 @@
 }
 
 
-.detail-container .main-boxes h5 {
+.detail-container .main-boxes h5 {=
     font-size: 17px;
     color: #7d879c;
     text-transform: capitalize;
 }
 
-.detail-container .main-boxes h6 {
+.detail-container .main-boxes h6 {=
     font-size: 19px;
     color: #373f50;
     text-transform: capitalize;
@@ -243,7 +241,13 @@ a:not(.footer-social-menu li a,.footer-list li a,.user-sidebar .active,.remove-s
     position: absolute;
     background-color: #304767;
     /* z-index: -1; */
+
+    margin-top: 50px;
 }
+
+.progress__bar__container ul .last::before{
+    margin-top: -100px;
+ }
 
 .right__container{
     padding: 1.5rem 1.5rem;
@@ -1037,7 +1041,7 @@ body{
 /*new style*/
 
 
-#icon1{
+#icon11{
     position: relative;
     z-index: 99999;
 }
@@ -1052,45 +1056,140 @@ body{
 
 }
 
-#icon2{
+#icon12{
     position: relative;
     z-index: 99999;
 }
 
-#icon3{
+#icon13{
     position: relative;
     z-index: 99999;
 }
 
-#icon4{
+#icon14{
     position: relative;
     z-index: 99999;
 }
-#icon5{
+#icon15{
     position: relative;
     z-index: 99999;
 }
-#icon6{
+#icon16{
     position: relative;
     z-index: 99999;
 }
-#icon7{
+#icon17{
     position: relative;
     z-index: 99999;
 }
-#icon8{
+#icon18{
     position: relative;
     z-index: 99999;
 }
-#icon9{
+#icon19{
     position: relative;
     z-index: 99999;
 }
-#icon10{
+#icon110{
     position: relative;
     z-index: 99999;
 }
-#icon11{
+#icon21{
+    position: relative;
+    z-index: 99999;
+}
+#icon22{
+    position: relative;
+    z-index: 99999;
+}
+#icon23{
+    position: relative;
+    z-index: 99999;
+}#icon24{
+    position: relative;
+    z-index: 99999;
+}#icon25{
+    position: relative;
+    z-index: 99999;
+}#icon26{
+    position: relative;
+    z-index: 99999;
+}#icon27{
+    position: relative;
+    z-index: 99999;
+}#icon28{
+    position: relative;
+    z-index: 99999;
+}#icon29{
+    position: relative;
+    z-index: 99999;
+}#icon210{
+    position: relative;
+    z-index: 99999;
+}#icon31{
+    position: relative;
+    z-index: 99999;
+}#icon32{
+    position: relative;
+    z-index: 99999;
+}#icon33{
+    position: relative;
+    z-index: 99999;
+}#icon34{
+    position: relative;
+    z-index: 99999;
+}#icon35{
+    position: relative;
+    z-index: 99999;
+}#icon36{
+    position: relative;
+    z-index: 99999;
+}#icon37{
+    position: relative;
+    z-index: 99999;
+}#icon38{
+    position: relative;
+    z-index: 99999;
+}
+#icon39{
+    position: relative;
+    z-index: 99999;
+}
+#icon310{
+    position: relative;
+    z-index: 99999;
+}
+
+#icon41{
+    position: relative;
+    z-index: 99999;
+}#icon42{
+    position: relative;
+    z-index: 99999;
+}#icon43{
+    position: relative;
+    z-index: 99999;
+}#icon44{
+    position: relative;
+    z-index: 99999;
+}#icon45{
+    position: relative;
+    z-index: 99999;
+}#icon46{
+    position: relative;
+    z-index: 99999;
+}#icon47{
+    position: relative;
+    z-index: 99999;
+}#icon48{
+    position: relative;
+    z-index: 99999;
+}
+#icon49{
+    position: relative;
+    z-index: 99999;
+}
+#icon410{
     position: relative;
     z-index: 99999;
 }
