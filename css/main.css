@@ -1859,6 +1859,7 @@ header .verified-listing-card .verified-listing-content p {
 }
 .listing-card .listing-card-img .fav-icon {
   padding: 5px;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   background: #3251F4;
