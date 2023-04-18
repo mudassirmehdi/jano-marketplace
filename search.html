@@ -160,6 +160,7 @@
                         <div class="search-sidebar d-block d-lg-none">
                             <div class="filter-bar mb-4"> 
                                    <p> <a href="#"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
+                                   <p> <a href="#"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
                                    <p> <a href="#">clear</a> </p> 
                             </div>
         
@@ -352,14 +353,23 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3">
-                <div class="search-sidebar d-none d-lg-block">
-                    <div class="filter-bar mb-4"> 
-                           <p> <a href="#"  class="filter-btn"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
-                           <p> <a href="#">clear</a> </p> 
-                    </div>
+            <div class="col-md-3 d-none d-lg-block">
+                <div class="filter-bar mb-4"> 
+                    <p> <a href="#"  class="filter-btn"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
+                    <p> <a href="#"  class="filter-btn-close"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
+                    <p> <a href="#" class="clear-btn">clear</a> </p> 
+                 </div>
+            </div>
+        </div>
 
-                    <div class="search-sidebar-accordians filter-bar-accordian">
+        <div class="row">
+           
+
+            <div class="col-lg-3 filter-bar-accordian ">
+                <div class="search-sidebar d-none d-lg-block">
+                    
+
+                    <div class="search-sidebar-accordians ">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item mb-4">
                                 <h2 class="accordion-header" id="headingOne">
@@ -542,7 +552,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9"> 
+            <div class="col-lg-9 extend-col-width  "> 
                    <div class="search-content"> 
                         <div class="row"> 
 
@@ -1345,10 +1355,30 @@
 
     $(document).ready(function(){
 
-        $('.filter-bar-accordian').hide();
+        const filtebarHide = $('.filter-bar-accordian').hide();
+        const filterBtnClose = $('.filter-btn-close').hide();
+
+        $('.extend-col-width').removeClass('col-lg-9');
+        
+        // console.log(filtebarHide.val());
 
         $(".filter-btn").click(function(){
-            $(".filter-bar-accordian").toggle();
+            // $(".filter-bar-accordian").toggle(); 
+            if(filtebarHide === 'hide') {
+                $(".filter-bar-accordian").hide();
+                
+            }
+            else {
+                $(".filter-bar-accordian").show(); 
+                $('.extend-col-width').addClass('col-lg-9'); 
+               
+            }
+        });
+
+        $(".clear-btn").click(function(){
+            // $(".filter-bar-accordian").toggle(); 
+            $(".filter-bar-accordian").hide(); 
+            $('.extend-col-width').removeClass('col-lg-9');  
         });
     });
 

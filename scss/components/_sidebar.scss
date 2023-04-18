@@ -387,8 +387,7 @@
 }
 
 // Search Page  
-
-.search-sidebar {
+.search-main {
     .filter-bar {
         display: flex;
         justify-content: space-between;
@@ -411,6 +410,26 @@
             }
         }
     }
+
+    .search-sidebar-and-content {
+        display: flex;
+        justify-content: space-between;
+
+        .filter-bar-accordian {
+            width: 2%;
+        }
+
+        .extend-col-width {
+            width: 75%;
+        }
+
+    }
+ 
+}
+
+
+.search-sidebar {
+ 
 
     .search-sidebar-accordians {
         .price-accordian {

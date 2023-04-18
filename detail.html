@@ -450,7 +450,7 @@
                                                 <div class=""></div>
                                             </div>
                                         </div>
-                                        <canvas id="canvas" style="display: block; width: 1379px; height: 689px;" width="1379" height="689" class="chartjs-render-monitor"></canvas>
+                                        <canvas id="canvas"  class="w-100 chartjs-render-monitor"></canvas>
                                     </div>
                                 </div>
 
@@ -611,7 +611,18 @@
                                   </div>
   
                                   <div class="chart mb-5">
-                                      <img src="images/revenue-profit-chart.png" alt="" class="img-fluid w-100">
+                                      <!-- <img src="images/revenue-profit-chart.png" alt="" class="img-fluid w-100"> --> 
+                                      <div style="width:100%;">
+                                        <div class="chartjs-size-monitor">
+                                            <div class="chartjs-size-monitor-expand">
+                                                <div class=""></div>
+                                            </div>
+                                            <div class="chartjs-size-monitor-shrink">
+                                                <div class=""></div>
+                                            </div>
+                                        </div>
+                                        <canvas id="canvas2"  class="w-100 chartjs-render-monitor"></canvas>
+                                    </div>
                                   </div>
   
   
@@ -995,5 +1006,100 @@
         });
     
     </script>
+
+<script> 
+    var config = {
+    type: 'line',
+    data: {
+        labels: ['usd $260,000', 'usd $260,000', 'usd $260,000', 'usd $260,000', 'usd $260,000', 'usd $260,000', 'usd $260,000'],
+        datasets: [{
+            label: 'Similar listings sold',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            fill: false,
+            data: [
+                10,
+                20,
+                30,
+                40,
+                100,
+                50,
+                150
+                /*randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()*/
+            ],
+        }, {
+            label: 'Similar listings for sale',
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            fill: false,
+            data: [
+                50,
+                300,
+                100,
+                450,
+                150,
+                200,
+                300
+            ],
+    
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Chart.js Line Chart - Logarithmic'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+      scaleLabel: {
+        display: true,
+        labelString: 'asking price'
+      },
+        
+            }],
+            yAxes: [{
+                display: true,
+                //type: 'logarithmic',
+      scaleLabel: {
+                        display: true,
+                        labelString: 'Profit Multiple'
+                    },
+                    ticks: {
+                        min: 0,
+                        max: 500,
+
+                        // forces step size to be 5 units
+                        stepSize: 100
+                    }
+            }]
+        }
+    }
+};
+
+    // window.onload = function() {
+        var ctx = document.getElementById('canvas2').getContext('2d');
+        window.myLine = new Chart(ctx, config);
+    // };
+
+    document.getElementById('randomizeData').addEventListener('click', function() {
+        config.data.datasets.forEach(function(dataset) {
+            dataset.data = dataset.data.map(function() {
+                return randomScalingFactor();
+            });
+
+        });
+
+        window.myLine.update();
+    });
+
+</script>
   </body>
 </html>

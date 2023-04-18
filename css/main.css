@@ -731,16 +731,16 @@ header .verified-listing-card .verified-listing-content p {
   color: #FFFFFF;
 }
 
-.search-sidebar .filter-bar {
+.search-main .filter-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
-.search-sidebar .filter-bar p {
+.search-main .filter-bar p {
   margin-bottom: 0px;
 }
-.search-sidebar .filter-bar p a {
+.search-main .filter-bar p a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -749,10 +749,21 @@ header .verified-listing-card .verified-listing-content p {
   text-decoration: none;
   color: #000000;
 }
-.search-sidebar .filter-bar p a img {
+.search-main .filter-bar p a img {
   height: 25px;
   margin-right: 13px;
 }
+.search-main .search-sidebar-and-content {
+  display: flex;
+  justify-content: space-between;
+}
+.search-main .search-sidebar-and-content .filter-bar-accordian {
+  width: 2%;
+}
+.search-main .search-sidebar-and-content .extend-col-width {
+  width: 75%;
+}
+
 .search-sidebar .search-sidebar-accordians .price-accordian .accordion-button {
   background-color: transparent !important;
 }
