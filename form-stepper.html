@@ -15,7 +15,7 @@
 
 
 </head>
-<body>
+<body onload="zoom()">
 
 <header>
     <div class="topbar d-none d-lg-block">
@@ -8687,6 +8687,13 @@ tinymce.init({
         debugger;
         var el = document.getElementById(elem);
         // el.checked=!el.checked
+    }
+</script>
+
+<script>
+    function zoom() {
+        document.body.classList.add('zoom');
+        document.body.style.zoom = "75%" ;
     }
 </script>
 

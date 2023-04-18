@@ -3,6 +3,14 @@ body {
 }
 
 
+.zoom {
+    zoom: 75%;
+    -webkit-zoom: 75%; 
+    -moz-zoom: 75%; 
+    -o-zoom: 75%; 
+    padding-right: 0px !important;
+}
+
 
 .section-padding {
     padding: 100px 0;
@@ -277,6 +285,34 @@ body {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     padding: 60px 40px;
+    .market-insights-btn-warpper {
+        .market-insights-btn {
+            border: 1px solid #242424;
+            border-radius: 64px;
+            padding: 30px;
+            width: 100%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px; 
+            text-transform: capitalize;
+            color: #4991E5;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+
+    .revenue-profit-btn {
+        .btn-primary-outline-jm {
+            border-color: #242424;
+        }
+    }
+   
+   
     .section-heading {
         margin-bottom: 60px;
         display: flex;
@@ -290,6 +326,15 @@ body {
             line-height: 52px; 
             text-transform: capitalize;
             color: #000000;
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px; 
+            text-transform: capitalize;
+            color: #888888;
         }
 
         .btn-red {

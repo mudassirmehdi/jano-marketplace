@@ -92,10 +92,15 @@
 
     .detail-main p {
         font-size: 14px !important;
-    }
+    } 
+
+    // .detail-main .verified-listing-badge {
+    //     margin-top: -40px !important; 
+    // }
 
     .detail-main .verified-listing-badge h5 {
         font-size: 14px !important;
+       
     }
 
     .detail-main .verified-listing-badge img {
@@ -143,7 +148,7 @@
     }
    
     .testimonials-slider .carousel .carousel-inner .carousel-item .slider-content .testimonials-img .qoutes-icon {
-        right: 0 !important;
+        right: 80px !important;
     }
 
     .valuation-slider .carousel .carousel-inner .carousel-item .slider-content h3 {
@@ -894,6 +899,7 @@
                 text-transform: capitalize;
             }
             .verified-listing-badge {
+                margin-top: -40px;
                 display: flex;
                 align-items: center;
                 h5 {
@@ -973,6 +979,7 @@
                 font-size: 16px;
                 line-height: 30px; 
                 color: #777777;
+                margin-bottom: 50px;
             }
     
             .other-info {

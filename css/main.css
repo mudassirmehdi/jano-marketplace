@@ -1790,6 +1790,47 @@ header .verified-listing-card .verified-listing-content p {
   }
 }
 
+@keyframes chartjs-render-animation {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.chartjs-render-monitor {
+  animation: chartjs-render-animation 1ms;
+}
+
+.chartjs-size-monitor, .chartjs-size-monitor-expand, .chartjs-size-monitor-shrink {
+  position: absolute;
+  direction: ltr;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.chartjs-size-monitor-expand > div {
+  position: absolute;
+  width: 1000000px;
+  height: 1000000px;
+  left: 0;
+  top: 0;
+}
+
+.chartjs-size-monitor-shrink > div {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+}
+
 .business-listing {
   width: 100%;
   padding: 50px 0 100px 0;
@@ -2118,7 +2159,7 @@ header .verified-listing-card .verified-listing-content p {
     height: auto !important;
   }
   .testimonials-slider .carousel .carousel-inner .carousel-item .slider-content .testimonials-img .qoutes-icon {
-    right: 0 !important;
+    right: 80px !important;
   }
   .valuation-slider .carousel .carousel-inner .carousel-item .slider-content h3 {
     font-size: 28px !important;
@@ -2757,6 +2798,7 @@ header .verified-listing-card .verified-listing-content p {
     text-transform: capitalize;
   }
   .listing-card .listing-card-content .verified-listing-badge {
+    margin-top: -40px;
     display: flex;
     align-items: center;
   }
@@ -2828,6 +2870,7 @@ header .verified-listing-card .verified-listing-content p {
     font-size: 16px;
     line-height: 30px;
     color: #777777;
+    margin-bottom: 50px;
   }
   .listing-card .listing-card-content .other-info {
     margin-bottom: 20px;
@@ -2854,6 +2897,14 @@ header .verified-listing-card .verified-listing-content p {
 }
 body {
   overflow-x: hidden !important;
+}
+
+.zoom {
+  zoom: 75%;
+  -webkit-zoom: 75%;
+  -moz-zoom: 75%;
+  -o-zoom: 75%;
+  padding-right: 0px !important;
 }
 
 .section-padding {
@@ -3093,6 +3144,25 @@ body {
   border-radius: 7px;
   padding: 60px 40px;
 }
+.revenue-profit-section .market-insights-btn-warpper .market-insights-btn {
+  border: 1px solid #242424;
+  border-radius: 64px;
+  padding: 30px;
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #4991E5;
+  display: block;
+}
+.revenue-profit-section .market-insights-btn-warpper a {
+  text-decoration: none;
+}
+.revenue-profit-section .revenue-profit-btn .btn-primary-outline-jm {
+  border-color: #242424;
+}
 .revenue-profit-section .section-heading {
   margin-bottom: 60px;
   display: flex;
@@ -3107,6 +3177,14 @@ body {
   line-height: 52px;
   text-transform: capitalize;
   color: #000000;
+}
+.revenue-profit-section .section-heading p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #888888;
 }
 .revenue-profit-section .section-heading .btn-red {
   border: 1px solid #FE696A;

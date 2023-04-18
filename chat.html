@@ -13,8 +13,8 @@
     <link href="css/main.css"  rel="stylesheet">
 
     
-  </head>
-  <body>
+  </head> 
+  <body onload="zoom()">
 
     <header>
         <div class="topbar d-none d-lg-block">
@@ -467,5 +467,12 @@
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
     <script src="js/main.js"></script>
+
+    <script>
+      function zoom() {
+        document.body.classList.add('zoom');
+          document.body.style.zoom = "75%"; 
+      }
+  </script>
   </body>
 </html>
