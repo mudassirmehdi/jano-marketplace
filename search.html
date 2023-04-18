@@ -15,7 +15,7 @@
 
     
   </head>
-  <body>
+  <body onload="zoom()">
 
     <header>
         <div class="topbar d-none d-lg-block">
@@ -355,11 +355,11 @@
             <div class="col-lg-3">
                 <div class="search-sidebar d-none d-lg-block">
                     <div class="filter-bar mb-4"> 
-                           <p> <a href="#"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
+                           <p> <a href="#"  class="filter-btn"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
                            <p> <a href="#">clear</a> </p> 
                     </div>
 
-                    <div class="search-sidebar-accordians">
+                    <div class="search-sidebar-accordians filter-bar-accordian">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item mb-4">
                                 <h2 class="accordion-header" id="headingOne">
@@ -551,6 +551,9 @@
                                     <div class="row m-0 p-0">
                                         <div class="col-md-3 m-0 p-0">
                                             <div class="listing-card-img">
+                                                <div class="fav-icon">
+                                                    <img src="images/icons/icon-star.svg" alt="">
+                                                </div>
                                                 <img src="images/screenshot-1.png" class="img-fluid w-100" alt="">
                                             </div>
                                         </div>
@@ -657,7 +660,7 @@
                                     <div class="row m-0 p-0">
                                         <div class="col-md-3 m-0 p-0">
                                             <div class="listing-card-img">
-                                                <img src="images/screenshot-1.png" class="img-fluid w-100" alt="">
+                                                <img src="images/screenshot-2.png" class="img-fluid w-100" alt="">
                                             </div>
                                         </div>
                                         <div class="col-md-9 m-0 p-0">
@@ -763,7 +766,10 @@
                                     <div class="row m-0 p-0">
                                         <div class="col-md-3 m-0 p-0">
                                             <div class="listing-card-img">
-                                                <img src="images/screenshot-1.png" class="img-fluid w-100" alt="">
+                                                <div class="fav-icon">
+                                                    <img src="images/icons/icon-star.svg" alt="">
+                                                </div>
+                                                <img src="images/screenshot-3.png" class="img-fluid w-100" alt="">
                                             </div>
                                         </div>
                                         <div class="col-md-9 m-0 p-0">
@@ -869,7 +875,8 @@
                                     <div class="row m-0 p-0">
                                         <div class="col-md-3 m-0 p-0">
                                             <div class="listing-card-img">
-                                                <img src="images/screenshot-1.png" class="img-fluid w-100" alt="">
+                                                
+                                                <img src="images/screenshot-4.png" class="img-fluid w-100" alt="">
                                             </div>
                                         </div>
                                         <div class="col-md-9 m-0 p-0">
@@ -975,113 +982,7 @@
                                     <div class="row m-0 p-0">
                                         <div class="col-md-3 m-0 p-0">
                                             <div class="listing-card-img">
-                                                <img src="images/screenshot-1.png" class="img-fluid w-100" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 m-0 p-0">
-                                            <div class="listing-card-content">
-                                                <div class="row d-flex top-row mb-lg-0 mb-3 align-items-md-start align-items-center">
-                                                    <div class="col-md-5 col-6  order-md-1 order-1 mb-3 mb-lg-0">
-                                                        <h6 class="verified-icon"><img src="images/icons/icon-check.svg" class="me-1"> ecommerce</h6>
-                                                        <h3 class="listing-title d-none d-md-block">TravelTour</h3>
-                                                    </div>
-                                                    <div class="col-md-4 col-12  order-md-2 order-3 mb-3 mb-lg-0">
-                                                        <div class="verified-listing-badge d-flex">
-                                                            <h5 class="me-2">Verified Listing</h5>
-                                                            <img src="images/icons/icon-plateforms.svg" >
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 col-6 order-md-3 order-2 mb-3 mb-lg-0">
-                                                       <div class="d-flex justify-content-end">
-                                                        <div class="price">
-                                                            <h5>Asking Price</h5>
-                                                             <h4>USD $5,000,000</h4>
-                                                        </div>
-                                                       </div>
-                                                    </div>
-                                                </div>
-            
-                                                <div class="row">
-                                                    <div class="col-lg-9">
-                                                        <h3 class="listing-title d-block d-md-none">TravelTour</h3>
-            
-                                                        <div class="meta-info d-flex flex-wrap gap-2">
-                                                            <div class="meta-info-items">
-                                                                <h6>Type</h6>
-                                                                <h5>Ecommerce</h5>
-                                                            </div>
-            
-                                                            <div class="meta-info-items">
-                                                                <h6>industry</h6>
-                                                                <h5>food and drink</h5>
-                                                            </div>
-            
-                                                            <div class="meta-info-items">
-                                                                <h6>monetization</h6>
-                                                                <h5>Ecommerce</h5>
-                                                            </div>
-            
-                                                            <div class="meta-info-items  d-none d-md-block">
-                                                                <h6>Age</h6>
-                                                                <h5>3 years</h5>
-                                                            </div>
-            
-                                                            <div class="meta-info-items  d-none d-md-block">
-                                                                <h6>net profit</h6>
-                                                                <h5>usd $/0,621 p/mo</h5>
-                                                            </div>
-            
-                                                            <div class="meta-info-items  d-none d-md-block">
-                                                                <h6> .</h6>
-                                                                <h5><img src="images/icons/icon-more.svg" alt=""></h5>
-                                                            </div>
-                                                        </div>
-            
-                                                        <p>Hi, I am an American founder and CEO. I have created an online grocery store that delivers a wide variety of products all around the world.</p>
-                                                    </div>
-                                                    <div class="col-lg-3">
-            
-                                                    </div>
-                                                </div>
-            
-                                                <div class="row align-items-center ">
-                                                    <div class="col-lg-5  d-none d-md-block">
-                                                        <div class="other-info  d-flex flex-wrap gap-5">
-                                                            <div class="other-info-items">
-                                                                <h6>Expiry:</h6>
-                                                                <h5>Never Expire</h5>
-                                                            </div>
-                
-                                                            <div class="other-info-items">
-                                                                <h6>Proposals</h6>
-                                                                <h5>1 Received</h5>
-                                                            </div>
-                
-                                                            <div class="other-info-items">
-                                                                <h6>Location</h6>
-                                                                <h5>Pakistan</h5>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-7">
-                                                        <div class="d-flex justify-content-md-end justify-content-center align-items-center gap-3">
-                                                            <a href="#" class="btn-primary-jm"> <img src="images/icons/icon-eye.svg" class="me-2" alt=""> Watch</a>
-                                                            <a href="#" class="btn-primary-jm"> View Listing</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="col-md-12">
-                                <div class="listing-card">
-                                    <div class="row m-0 p-0">
-                                        <div class="col-md-3 m-0 p-0">
-                                            <div class="listing-card-img">
-                                                <img src="images/screenshot-1.png" class="img-fluid w-100" alt="">
+                                                <img src="images/screenshot-5.png" class="img-fluid w-100" alt="">
                                             </div>
                                         </div>
                                         <div class="col-md-9 m-0 p-0">
@@ -1435,6 +1336,32 @@
                 }
             }
             });
+    </script>
+
+    <script> 
+
+
+
+
+    $(document).ready(function(){
+
+        $('.filter-bar-accordian').hide();
+
+        $(".filter-btn").click(function(){
+            $(".filter-bar-accordian").toggle();
+        });
+    });
+
+
+    
+        
+     
+    </script>
+
+    <script>
+        function zoom() {
+            document.body.style.zoom = "75%" 
+        }
     </script>
 
     
