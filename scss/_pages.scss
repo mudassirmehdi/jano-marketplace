@@ -11,6 +11,14 @@ body {
     padding-right: 0px !important;
 }
 
+.offcanvas {
+    overflow-x: hidden !important;
+    .offcanvas-body {
+        overflow-x: hidden !important;
+    }
+}
+
+
 
 .section-padding {
     padding: 100px 0;

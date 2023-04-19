@@ -2132,6 +2132,13 @@ header .verified-listing-card .verified-listing-content p {
   .detail-main p {
     font-size: 14px !important;
   }
+  .custom-pagination {
+    margin-top: 40px;
+  }
+  .custom-pagination .pagination .page-item .page-link {
+    font-size: 18px;
+    padding: 0px 20px;
+  }
   .detail-main .verified-listing-badge h5 {
     font-size: 14px !important;
   }
@@ -2917,6 +2924,13 @@ body {
   -moz-zoom: 75%;
   -o-zoom: 75%;
   padding-right: 0px !important;
+}
+
+.offcanvas {
+  overflow-x: hidden !important;
+}
+.offcanvas .offcanvas-body {
+  overflow-x: hidden !important;
 }
 
 .section-padding {

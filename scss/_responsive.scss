@@ -94,6 +94,14 @@
         font-size: 14px !important;
     } 
 
+    .custom-pagination {
+        margin-top: 40px;
+    }
+    .custom-pagination .pagination .page-item .page-link {
+        font-size: 18px;
+        padding: 0px 20px;
+    }
+
     // .detail-main .verified-listing-badge {
     //     margin-top: -40px !important; 
     // }
