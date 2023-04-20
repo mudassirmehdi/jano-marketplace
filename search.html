@@ -354,9 +354,8 @@
         <div class="row">
             <div class="col-md-3 d-none d-lg-block">
                 <div class="filter-bar mb-4"> 
-                    <p> <a href="javascript:void(0);"  class="filter-btn"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
-                    <p> <a href="javascript:void(0);"  class="filter-btn-close"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p> 
-                    <p> <a href="javascript:void(0);" class="clear-btn">clear</a> </p> 
+                    <p> <a href="javascript:void(0);"  class="filter-btn"><img src="images/icons/icon-filter.svg" alt=""> Filters</a> </p>  
+                    <p> <a href="javascript:void(0);" class="clear-btn">X</a> </p> 
                  </div>
             </div>
         </div>
@@ -1355,7 +1354,11 @@
         const filtebarHide = $('.filter-bar-accordian').hide();
         const filterBtnClose = $('.filter-btn-close').hide();
 
+        const clearBtn = $('.clear-btn').hide();
+
         $('.extend-col-width').removeClass('col-lg-9');
+
+
         
         // console.log(filtebarHide.val());
 
@@ -1368,6 +1371,8 @@
             else {
                 $(".filter-bar-accordian").show(); 
                 $('.extend-col-width').addClass('col-lg-9'); 
+                $('.clear-btn').show();
+
                
             }
         });
@@ -1376,6 +1381,8 @@
             // $(".filter-bar-accordian").toggle(); 
             $(".filter-bar-accordian").hide(); 
             $('.extend-col-width').removeClass('col-lg-9');  
+            $('.clear-btn').hide();
+
         });
     });
 
